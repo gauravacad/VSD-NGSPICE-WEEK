@@ -1,5 +1,5 @@
-# VSD-NGSPICE-WEEK
-# VSD Hardware Design Program
+# VSD Hardware Design Program - NGSPICE for WEEK4
+---
 
 ## CMOS Circuit Design and SPICE Simulations
 
@@ -467,3 +467,29 @@ plot -vdd#branch
 **Id vs Vds for different Vgs - sky130 NMOS (W=5um, L=2um)**
 
 ![Alt Text](Images/lab1.png)
+
+
+# spice clone of directory structure 
+```bash
+sky130CircuitDesignWorkshop/
+├── design/
+│   ├── day1_nfet_idvds_L2_W5.spice
+│   ├── day2_nfet_idvgs_L015_W039.spice
+│   ├── day2_nfet_idvds_L015_W039.spice
+│   ├── day3_inv_tran_Wp084_Wn036.spice
+│   ├── day3_inv_vtc_Wp084_Wn036.spice
+│   ├── day4_inv_noisemargin_wp1_wn036.spice
+│   ├── day5_inv_devicevariation_wp7_wn042.spice
+│   ├── day5_inv_supplyvariation_Wp1_Wn036.spice
+│   └── sky130_fd_pr/
+│       ├── cells/
+│       │   ├── nfet_01v8/
+│       │   └── pfet_01v8/
+│       ├── models/
+│       │   ├── all.spice
+│       │   ├── parameters.spice
+│       │   └── sky130.lib.spice
+│       ├── LICENSE
+│       └── README.rst
+└── README.md
+```
