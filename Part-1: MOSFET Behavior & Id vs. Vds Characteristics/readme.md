@@ -57,14 +57,17 @@ Example of buffer with some values of output loads in femto farad (fF).
   
 <img width="540" height="340" alt="image" src="https://github.com/user-attachments/assets/a91a905f-493b-4d04-8ccd-47f34540a0a8" />
 
- More and More gate potential will form a depletion region or a conduction channel between source and Drain.
-
+- More and More gate potential will form a depletion region or a conduction channel between source and Drain.
+- Formaltaion of delpetion region , means it has depleted its majority charge carrier due to reverse bias.
+- The depletion region is similar to Pn junction
+- Increase the gate voltage more and more positive charge particles get depleted and higher the thickness of depletion layer. At a certain point we observe a Inversion
+- **Inversion** : `Gate Volate` at which `strong Inversion` happens is called `Threshold Voltage`. There are parameters on Which the `Threshold voltage` depends and that is used as model for Spice simulation.
+ 
 <img width="330" height="320" alt="image" src="https://github.com/user-attachments/assets/5a97a1fd-766e-4d65-a573-4ade8305db2b" />
 
-
-
-
 ---
+
+
 
 
 
