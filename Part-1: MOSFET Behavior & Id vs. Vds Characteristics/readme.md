@@ -82,9 +82,7 @@ Example of buffer with some values of output loads in femto farad (fF).
   ### Threshold voltage positive substrate potential
 - **Unique thing**:-  `Vgs = vto + V1` (due to Vbs >0) so we observe surface inversion delayed in this case.
 
-<img width="584" height="232" alt="image" src="https://github.com/user-attachments/assets/47d9affd-af28-4e2e-a494-7160f29015c3" />
-
-
+<img width="559" height="539" alt="image" src="https://github.com/user-attachments/assets/5b1d5dc4-59a0-4406-8395-de997a45d122" />
 
 ---
 
