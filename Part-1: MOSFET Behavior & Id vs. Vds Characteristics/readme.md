@@ -23,6 +23,23 @@ Example of buffer with some values of output loads in femto farad (fF).
 - Are these delay models are accurate coz they are going in our chip circuit design and therefore we need to do the matching in simulaton.
 - What ever we are doing in STA can be trusted or not? So need spice to verify?
 - So it involves characterization of N-P mos transistor and derive the I and vds of transistor and delay of these N or P mos when connected in different fasions.
+  ### Circuit design and Spice Simulation 
+- `Circuit design` : We try to understand that what king of N or P Mos transistor are connected in certain fasion resulting in a different Logic e.g. `And gate` etc.
+- `Spice Simulation`: The above particlaur circuit posses certain characteristics i.e. NMos or PMos which actually decide the delay and decides W/L ratio and thereby drain current and the Vout-Vin curve.
 **Ans** is `Spice Simulation`
+
+## Basic Element of Circuit design 
+
+**Screenshot:** The Basic NMos strucutre and PMos is just invert of it.
+
+<img width="803" height="480" alt="image" src="https://github.com/user-attachments/assets/47d0faf2-b430-49a0-979b-bab369a0ece0" />
+
+
+---
+
+### Thershold voltage 
+- We first ground all the terminals and what we extract are PN juncition behaviour back to back connected
+   
+ <img width="479" height="448" alt="image" src="https://github.com/user-attachments/assets/a2a41edc-ef7b-42e3-935e-6c2954172ff6" />
 
 
