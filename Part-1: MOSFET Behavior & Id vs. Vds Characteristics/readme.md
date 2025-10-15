@@ -67,6 +67,14 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 ---
 
+- After certain we dont have majority carrier and then What happens ?
+- The gate potential forms a strong magnet and it attracts from nearby area heavily doped `n+` source region
+- It increase the channel width. The gap is covered with  between source to Drain which was initally had High resistance.
+- Positive V-SB (Source to Body) Additional reverse Bias to this Pn will additional increase the channel width.
+
+<img width="330" height="320" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
+
+
 
 
 
