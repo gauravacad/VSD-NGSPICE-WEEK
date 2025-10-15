@@ -39,7 +39,13 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 ### Thershold voltage 
 - We first ground all the terminals and what we extract are PN juncition behaviour back to back connected
-
+- Nothing is `ON`, Channel has high resistance , no conduction and this is called Source
+ 
 <img width="570" height="350" alt="image" src="https://github.com/user-attachments/assets/51471fcc-5d9c-40d6-8300-d7d3d24932d3" />
 
+---
+
+- Now we will aplly small potential at the Gate, this essentially menas that all the ploysilicon area forms capacitor with +ve charge.
+
+<img width="621" height="425" alt="image" src="https://github.com/user-attachments/assets/ba854e02-db2b-4603-902d-116460af18ca" />
 
