@@ -71,9 +71,25 @@ Example of buffer with some values of output loads in femto farad (fF).
 - The gate potential forms a strong magnet and it will attract from nearby area heavily doped `n+` source region.
 - It increase the channel width. The gap is covered with  between source to Drain which was initally had High resistance.
 - Positive V-SB (Source to Body) Additional reverse Bias to this Pn will additional increase the channel width.
+- Here, we observe in the figure that due to +Vsb few -ve charges are pulled from channel towards source `S` area.
+- Logically, what will go wrong ? As a result of that Vbs there is slant surface inversion.
+- This define a Vto (when Vbs=0) surface inverion happened when Vbs =0.
 
 <img width="330" height="320" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
 
+---
+
+  ### Threshold voltage positive substrate potential
+- **Unique thing**:-  `Vgs = vto + V1` (due to Vbs >0) so we observe surface inversion delayed in this case.
+
+<img width="584" height="232" alt="image" src="https://github.com/user-attachments/assets/47d9affd-af28-4e2e-a494-7160f29015c3" />
+
+
+
+---
+
+
+- 
 
 
 
