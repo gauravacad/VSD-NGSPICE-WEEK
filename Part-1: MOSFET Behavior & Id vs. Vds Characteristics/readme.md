@@ -85,6 +85,42 @@ Example of buffer with some values of output loads in femto farad (fF).
 <img width="706" height="724" alt="image" src="https://github.com/user-attachments/assets/39c8f608-dde1-41ad-9406-356786bc91d7" />
 
 
+# Threshold Voltage Equation
+
+## Main Equation
+```
+Vt = Vto + γ(√|−2φf + Vsb| − √|−2φf|)
+```
+
+## Parameters
+
+- **Vto**: Threshold voltage at Vsb = 0, and is a function of manufacturing process
+- **γ** (gamma): Body effect coefficient, expresses the impact of changes in body bias Vsb (Unit is V^0.5)
+- **φf** (phi_f): Fermi Potential (Covered in Semiconductor Physics Slides)
+
+## Body Effect Coefficient
+```
+γ = √(2qNAεsi) / Cox
+```
+
+Where:
+- **εsi**: Relative permittivity of silicon = 11.7
+- **NA**: Doping concentration
+- **q**: Charge of the electron
+- **Cox**: Oxide capacitance
+
+## Fermi Potential
+```
+φf = −φT · ln(NA / ni)
+```
+
+Where:
+- **ni**: Intrinsic doping parameter for the substrate
+
+## Summary
+
+The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through the body effect coefficient (γ). This relationship is crucial in MOSFET operation, especially when the source-to-body voltage is non-zero.
+
 ---
 Resistive region of operation with small drain-source voltage
 
