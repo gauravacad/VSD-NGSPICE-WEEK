@@ -92,7 +92,7 @@ The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through th
 - When Vds is present with Vgs higher than the Vthreshold. There will be inversion but here Vds will be considerable.
 - Now we will calucalte the V(x) a voltage at a point 'x' along the channel as Vgs - V(x) called gate-to-channel Voltage.
 
-<img width="803" height="577" alt="image" src="https://github.com/user-attachments/assets/e09c0e2c-6110-4a8c-9670-e85675bcb01c" />
+<img width="540" height="450" alt="image" src="https://github.com/user-attachments/assets/e09c0e2c-6110-4a8c-9670-e85675bcb01c" />
 
 
 - 
