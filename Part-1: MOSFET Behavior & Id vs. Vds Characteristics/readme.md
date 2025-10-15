@@ -75,47 +75,9 @@ Example of buffer with some values of output loads in femto farad (fF).
 - Logically, what will go wrong ? As a result of that Vbs there is slant surface inversion.
 - This define a Vto (when Vbs=0) surface inverion happened when Vbs =0.
 
-<img width="330" height="320" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
+<img width="230" height="220" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
 
 ---
-
-  ### Threshold voltage positive substrate potential
-- **Unique thing**:-  `Vgs = vto + V1` (due to Vbs >0) so we observe surface inversion delayed in this case.
-
-<img width="706" height="724" alt="image" src="https://github.com/user-attachments/assets/39c8f608-dde1-41ad-9406-356786bc91d7" />
-
-
-# Threshold Voltage Equation
-
-## Main Equation
-```
-Vt = Vto + γ(√|−2φf + Vsb| − √|−2φf|)
-```
-
-## Parameters
-
-- **Vto**: Threshold voltage at Vsb = 0, and is a function of manufacturing process
-- **γ** (gamma): Body effect coefficient, expresses the impact of changes in body bias Vsb (Unit is V^0.5)
-- **φf** (phi_f): Fermi Potential (Covered in Semiconductor Physics Slides)
-
-## Body Effect Coefficient
-```
-γ = √(2qNAεsi) / Cox
-```
-
-Where:
-- **εsi**: Relative permittivity of silicon = 11.7
-- **NA**: Doping concentration
-- **q**: Charge of the electron
-- **Cox**: Oxide capacitance
-
-## Fermi Potential
-```
-φf = −φT · ln(NA / ni)
-```
-
-Where:
-- **ni**: Intrinsic doping parameter for the substrate
 
 ## Summary
 
