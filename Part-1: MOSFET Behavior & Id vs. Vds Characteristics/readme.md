@@ -75,7 +75,7 @@ Example of buffer with some values of output loads in femto farad (fF).
 - Logically, what will go wrong ? As a result of that Vbs there is slant surface inversion.
 - This define a Vto (when Vbs=0) surface inverion happened when Vbs =0.
 
-<img width="230" height="220" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
+<img width="330" height="320" alt="image" src="https://github.com/user-attachments/assets/8660c0c3-7b10-4f3d-b06e-17bdc16a273b" />
 
 ---
 
