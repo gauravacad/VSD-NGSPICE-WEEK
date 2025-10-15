@@ -1,1 +1,2 @@
-
+- Simulate an NMOS device, sweeping (Vds) for diAerent (Vgs), to observe linear and saturation regions 
+-  Plot ( Id) vs. (Vds) curves 
