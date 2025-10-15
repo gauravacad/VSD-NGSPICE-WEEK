@@ -51,7 +51,7 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 **Screenshot:** The Basic NMos strucutre and PMos is just invert of it.
 
-<img width="570" height="350" alt="image" src="https://github.com/user-attachments/assets/fa878ef1-fd34-432f-ad81-fd89712268e4" />
+<img width="370" height="250" alt="image" src="https://github.com/user-attachments/assets/fa878ef1-fd34-432f-ad81-fd89712268e4" />
 
 ---
 
