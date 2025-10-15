@@ -1,4 +1,4 @@
-- Simulate an NMOS device, sweeping (Vds) for diAerent (Vgs), to observe linear and saturation regions 
+- Simulate an NMOS device, sweeping (Vds) for different (Vgs), to observe linear and saturation regions 
 -  Plot ( Id) vs. (Vds) curves
 
 # Need of spice simulation 
