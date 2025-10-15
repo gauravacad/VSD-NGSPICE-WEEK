@@ -86,7 +86,7 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through the body effect coefficient (γ). This relationship is crucial in MOSFET operation, especially when the source-to-body voltage is non-zero.
 
-<img width="550" height="550 alt="image" src="https://github.com/user-attachments/assets/e506a714-0614-4168-b194-707dc1653bbc" />
+<img width="540" height="540" alt="image" src="https://github.com/user-attachments/assets/e506a714-0614-4168-b194-707dc1653bbc" />
 
 ---
 Resistive region of operation with small drain-source voltage
