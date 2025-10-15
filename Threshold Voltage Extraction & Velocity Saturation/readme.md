@@ -1,1 +1,2 @@
-
+- Sweep (Vgs) vs. ( Id ) and extract threshold ( Vt ) (e.g. by linear extrapolation) 
+- Observe eAects of velocity saturation in short-channel regime
