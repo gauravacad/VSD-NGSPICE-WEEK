@@ -82,7 +82,7 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 ---
 
-## Summary
+## Term V(x) gate-to-channel Voltage
 
 The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through the body effect coefficient (γ). This relationship is crucial in MOSFET operation, especially when the source-to-body voltage is non-zero.
 
@@ -94,9 +94,13 @@ The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through th
 
 <img width="540" height="450" alt="image" src="https://github.com/user-attachments/assets/e09c0e2c-6110-4a8c-9670-e85675bcb01c" />
 
+## Drift current theory 
 
-- 
-
+- channel Voltage is not constant but it is gradient.
+- The charge induce int he channel is Vgx-V(x) voltage.
+- Q=CV = induced charge = - Cox ([vgs - V(x)] -Vt
+ 
+<img width="389" height="416" alt="image" src="https://github.com/user-attachments/assets/2605d08d-b253-4cb0-b94c-502512e9e7cd" />
 
 
 
