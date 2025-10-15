@@ -6,13 +6,13 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 **Screenshot:** The example delay table for a Buffer 
 
-<img width="533" height="701" alt="image" src="https://github.com/user-attachments/assets/7a75921b-d91a-4975-a03d-8caf37159f0a" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/7a75921b-d91a-4975-a03d-8caf37159f0a" />
 
 ---
 
 **Screenshot:** The table used to extract the delay value based on input slew i.e. 40 ps and assumed total cap at node A of a Buffer as 60 fF.
 
-<img width="616" height="754" alt="image" src="https://github.com/user-attachments/assets/9ce85898-3606-489c-b998-701aa914c63a" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/9ce85898-3606-489c-b998-701aa914c63a" />
 
 ---
 - Though the value are not taken exactly from row 2 and column 3-4. hence the exact delay is not available.
@@ -32,7 +32,7 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 **Screenshot:** The Basic NMos strucutre and PMos is just invert of it.
 
-<img width="803" height="480" alt="image" src="https://github.com/user-attachments/assets/47d0faf2-b430-49a0-979b-bab369a0ece0" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/47d0faf2-b430-49a0-979b-bab369a0ece0" />
 
 
 ---
@@ -40,6 +40,6 @@ Example of buffer with some values of output loads in femto farad (fF).
 ### Thershold voltage 
 - We first ground all the terminals and what we extract are PN juncition behaviour back to back connected
    
- <img width="479" height="448" alt="image" src="https://github.com/user-attachments/assets/a2a41edc-ef7b-42e3-935e-6c2954172ff6" />
+ <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/a2a41edc-ef7b-42e3-935e-6c2954172ff6" />
 
 
