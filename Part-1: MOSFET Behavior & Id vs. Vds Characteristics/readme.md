@@ -47,11 +47,11 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 ---
 
-- Now we will aplly small potential at the Gate, this essentially menas that all the ploysilicon area forms capacitor with +ve charge.
+- Now we will apply small potential at the Gate, this essentially menas that all the ploysilicon area forms capacitor with +ve charge.
 
 **Screenshot:** The Basic NMos strucutre and PMos is just invert of it.
 
-<img width="370" height="250" alt="image" src="https://github.com/user-attachments/assets/fa878ef1-fd34-432f-ad81-fd89712268e4" />
+<img width="350" height="220" alt="image" src="https://github.com/user-attachments/assets/fa878ef1-fd34-432f-ad81-fd89712268e4" />
 
 ---
 
