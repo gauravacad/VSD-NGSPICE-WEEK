@@ -1,0 +1,2 @@
+- Vary supply voltage ( Vdd ) and re-plot VTCs to observe how switching threshold shifts 
+- Modify transistor sizing (e.g. W/L of PMOS or NMOS) to simulate device variation, and observe eAects on VTC, noise margins, delays
