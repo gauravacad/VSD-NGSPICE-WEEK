@@ -40,6 +40,6 @@ Example of buffer with some values of output loads in femto farad (fF).
 ### Thershold voltage 
 - We first ground all the terminals and what we extract are PN juncition behaviour back to back connected
 
-<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/51471fcc-5d9c-40d6-8300-d7d3d24932d3" />
+<img width="570" height="350" alt="image" src="https://github.com/user-attachments/assets/51471fcc-5d9c-40d6-8300-d7d3d24932d3" />
 
 
