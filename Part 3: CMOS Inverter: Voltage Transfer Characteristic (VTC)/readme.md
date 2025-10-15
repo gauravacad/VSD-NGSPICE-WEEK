@@ -1,0 +1,3 @@
+- Build a CMOS inverter (PMOS + NMOS) 
+- Sweep input, plot ( V{out} ) vs. ( V{in} ) 
+- Identify the switching threshold ( Vm ) (point where ( V{in} = V{out} ))
