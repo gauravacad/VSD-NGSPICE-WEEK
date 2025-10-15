@@ -100,8 +100,44 @@ The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through th
 - The charge induce int he channel is Vgx-V(x) voltage.
 - Q=CV = induced charge = - Cox ([vgs - V(x)] -Vt
  
-<img width="389" height="416" alt="image" src="https://github.com/user-attachments/assets/2605d08d-b253-4cb0-b94c-502512e9e7cd" />
+<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/2605d08d-b253-4cb0-b94c-502512e9e7cd" />
 
+# First Order Analysis
+
+## Charge Distribution in MOSFET
+
+### Charge Density Equation
+```
+Qi(x) ∝ -([Vgs - V(x)] - Vt)
+```
+
+**i.e.**
+```
+Qi(x) = -Cox ([Vgs - V(x)] - Vt)
+```
+
+## Gate Oxide Capacitance
+```
+Cox = εox / tox
+```
+
+### Parameters
+
+- **Cox**: Gate oxide capacitance
+- **εox**: Oxide permittivity
+  - = 3.97 × εo (relative permittivity)
+  - = 3.5 × 10e-11 F/m
+- **tox**: Oxide thickness
+
+## Physical Interpretation
+
+The charge density Qi(x) at any point x in the channel is proportional to the difference between the gate-to-source voltage and the local channel voltage, minus the threshold voltage. This relationship is scaled by the gate oxide capacitance (Cox).
+
+## Notes
+
+- The negative sign indicates that for n-channel MOSFETs, the induced charge is negative (electrons)
+- Cox depends on the oxide material properties and thickness
+- Thinner oxides result in higher capacitance and better gate control
 
 
 
