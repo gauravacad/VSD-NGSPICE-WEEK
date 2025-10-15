@@ -59,7 +59,8 @@ Example of buffer with some values of output loads in femto farad (fF).
 
  More and More gate potential will form a depletion region or a conduction channel between source and Drain.
 
-<img width="547" height="340" alt="image" src="https://github.com/user-attachments/assets/79d6e405-2359-4d43-afe4-4228ccaf60de" />
+<img width="467" height="404" alt="image" src="https://github.com/user-attachments/assets/5a97a1fd-766e-4d65-a573-4ade8305db2b" />
+
 
 
 
