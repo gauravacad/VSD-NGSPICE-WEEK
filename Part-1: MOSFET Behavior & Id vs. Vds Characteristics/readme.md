@@ -95,50 +95,83 @@ The threshold voltage (Vt) is affected by the body bias voltage (Vsb) through th
 <img width="540" height="450" alt="image" src="https://github.com/user-attachments/assets/e09c0e2c-6110-4a8c-9670-e85675bcb01c" />
 
 ## Drift current theory 
-
 - channel Voltage is not constant but it is gradient.
 - The charge induce int he channel is Vgx-V(x) voltage.
 - Q=CV = induced charge = - Cox ([vgs - V(x)] -Vt
- 
-<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/2605d08d-b253-4cb0-b94c-502512e9e7cd" />
-
-# First Order Analysis
-
-## Charge Distribution in MOSFET
-
-### Charge Density Equation
+ ### First Order Analysis
+- Charge Density Equation
 ```
 Qi(x) ∝ -([Vgs - V(x)] - Vt)
-```
-
-**i.e.**
-```
 Qi(x) = -Cox ([Vgs - V(x)] - Vt)
 ```
-
-## Gate Oxide Capacitance
+### Gate Oxide Capacitance
 ```
 Cox = εox / tox
-```
-
-### Parameters
-
+## Parameters
 - **Cox**: Gate oxide capacitance
 - **εox**: Oxide permittivity
   - = 3.97 × εo (relative permittivity)
   - = 3.5 × 10e-11 F/m
 - **tox**: Oxide thickness
-
-## Physical Interpretation
-
+```
+`Physical Interpretation`
 The charge density Qi(x) at any point x in the channel is proportional to the difference between the gate-to-source voltage and the local channel voltage, minus the threshold voltage. This relationship is scaled by the gate oxide capacitance (Cox).
-
-## Notes
-
+**Notes**
 - The negative sign indicates that for n-channel MOSFETs, the induced charge is negative (electrons)
 - Cox depends on the oxide material properties and thickness
 - Thinner oxides result in higher capacitance and better gate control
 
+### Drift and Diffusion Current 
+
+- Diffusion current is there due to carrier concentration or charge carrier. `Like` Water Flow due to level difference. Same analogy works for carrier current.
+- The Drift current is due to potential differnce that is Zero and Vds points across the depletion channel ends.
+- Drift current is measures as velocity of charge carrier availabe over the channel width.
+
+ <img width="350" height="450" alt="image" src="https://github.com/user-attachments/assets/68094cf6-f938-4a83-afaf-4c8031d256c1" />
+
+### Drain current and Model or Equation used for Spice Engine.
+- Basic Behing Spice Simulations
+``` bash
+Id = -Vn(x)* Qi(x)*W
+Vn(x) = Mobility * Electric Field
+      = μn * dV/dx
+By supstituting and integration we will get the final expression as
+Id = μn.Cox * (W/L) [Vgs - Vt]Vds - Vds²/2
+# technology parameter = gain factor = kn=k1n *(W/L)
+```
+Here 
+``` bash
+Id= kn * [(1 - 0.45)*0.05-(0.05)²/2]
+  = kn * [0.0275-`0.00125`]
+    if `0.00125` = 0 for Vds <= (Vgs-Vt)
+Id= kn
+```
+## Region of Operation
+This equation is valid in the **Linear (Triode) Region** when:
+```
+Vds < (Vgs - Vt)
+```
+## Saturation Region
+When `Vds ≥ (Vgs - Vt)`, the MOSFET enters saturation, and:
+```
+Id = (kn/2)(Vgs - Vt)²
+```
+## Special Cases
+### 1. Small Vds (Deep Linear Region)
+When `Vds << (Vgs - Vt)`, the equation simplifies to:
+```
+Id ≈ kn(Vgs - Vt)Vds
+```
+This represents a **resistive behavior** where Id is approximately linear with Vds.
+### 2. Channel Resistance
+```
+Rch = 1 / [kn(Vgs - Vt)]
+```
+## Key Points
+- The drain current has a quadratic dependence on Vds
+- Maximum current in linear region occurs at `Vds = (Vgs - Vt)`
+- The `-Vds²/2` term accounts for the non-uniform channel charge distribution
+- This equation assumes long-channel behavior and neglects velocity saturation
 
 
 
