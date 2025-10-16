@@ -173,5 +173,51 @@ Rch = 1 / [kn(Vgs - Vt)]
 - The `-Vds²/2` term accounts for the non-uniform channel charge distribution
 - This equation assumes long-channel behavior and neglects velocity saturation
 
+### Thresholf Voltage Equation -> base equation for Spice Model
+- As we know the Threshold Voltage Equation
+```
+Vt = Vto + γ(√|−2φf + Vsb| − √|−2φf|)
+```
+## Body Effect Coefficient (γ)
+```
+γ = √(2qNAεsi) / Cox
+
+## Fermi Potential (φf)
+φf = −φT · ln(NA / ni)
+
+## Here Parameters
+- **Vt**: Threshold voltage (V)
+- **Vto**: Threshold voltage at Vsb = 0 (V)
+- **γ** (gamma): Body effect coefficient (V^0.5)
+- **φf** (phi_f): Fermi potential (V)
+- **Vsb**: Source-to-body voltage (V)
+- **q**: Electronic charge = 1.6 × 10⁻¹⁹ C
+- **NA**: Acceptor doping concentration (cm⁻³)
+- **εsi**: Permittivity of silicon
+- **Cox**: Gate oxide capacitance per unit area (F/m²)
+- **φT**: Thermal voltage = kT/q ≈ 26 mV at room temperature (300K)
+- **NA**: Acceptor doping concentration (cm⁻³)
+- **ni**: Intrinsic carrier concentration of silicon ≈ 1.5 × 10¹⁰ cm⁻³ at 300K
+- **k**: Boltzmann constant = 1.38 × 10⁻²³ J/K
+- **T**: Absolute temperature (K)
+```
+
+## Physical Interpretation
+
+### Body Effect
+The threshold voltage increases when the source-to-body voltage (Vsb) is positive (for n-channel MOSFET):
+- When **Vsb = 0**: Vt = Vto (no body effect)
+- When **Vsb > 0**: Vt > Vto (threshold voltage increases)
+This phenomenon is called the **body effect** or **back-gate effect**.
+### Fermi Potential
+- φf represents the difference between the intrinsic Fermi level and the actual Fermi level in the doped substrate
+- Higher doping concentration (NA) leads to larger |φf|
+- The negative sign indicates this is for p-type substrate (n-channel MOSFET)
+## Key Points
+- The body effect coefficient γ depends on substrate doping and oxide capacitance
+- Thinner gate oxide (higher Cox) reduces the body effect
+- Higher substrate doping increases both γ and |φf|
+- The body effect is important in circuits where source and body are not at the same potential
+- This effect is particularly significant in stacked transistor configurations and analog circuits
 
 
