@@ -437,6 +437,8 @@ setplot dc1
 - We need to plot the threshold voltage Plot for Id vs Vgs curve
 - We need a tangent or slope and extend to x-axis. So  
 
-**Screen Shot:** Finding the Slope that is Vth = 7.7
-<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/42a43656-6984-4766-bfa5-09614610bd6f" />
+**Screen Shot:** Finding the Slope that is Vth = ~ 0.75
+
+<img width="1687" height="883" alt="image" src="https://github.com/user-attachments/assets/be56d4ea-67f7-4ea7-8394-281de7ef6517" />
+
 
