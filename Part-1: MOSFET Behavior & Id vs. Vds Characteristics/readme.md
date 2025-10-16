@@ -26,6 +26,7 @@ Example of buffer with some values of output loads in femto farad (fF).
   ### Circuit design and Spice Simulation 
 - `Circuit design` : We try to understand that what king of N or P Mos transistor are connected in certain fasion resulting in a different Logic e.g. `And gate` etc.
 - `Spice Simulation`: The above particlaur circuit posses certain characteristics i.e. NMos or PMos which actually decide the delay and decides W/L ratio and thereby drain current and the Vout-Vin curve.
+
 **Ans** is `Spice Simulation`
 
 ## Basic Element of Circuit design 
@@ -390,7 +391,35 @@ setplot dc1
 ### Velocity Saturation Effect
 - At lower field it is linear function and at higher field it is constatnt due to scattering effect.
 - Vn(x) = mobility * electric field.
-- 
+-  Case Vgt = minimum value: Cutoff region
+-  Case Vds= minimum value , Lower value is resistive region of operation where our device operates. 
+-  Case Vdsat = minimum = velocity saturation where short channel device works
+- **Observation peak current trend is not maintained at lower nodes that is due to velocity saturation**   
 
+## Define delay -: CMOS Voltage-Transfer Characteristics (VTC) 
+-- No video found 
 
+### DAY 2 Task 
+-dd
+
+``` bash
+*Model Description
+.param temp=27
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+*Netlist Description
+XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
+R1 n1 in 55
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+*simulation commands
+.op
+.dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
+.control
+run
+display
+setplot dc1
+.endc
+.end
+```
 
