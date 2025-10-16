@@ -370,6 +370,22 @@ setplot dc1
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/2abe2621-7149-4c21-9f19-067a8f094232" />    <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/90b2fc1b-1d1a-4831-851b-54d1333466bc" />
 
+### Spice Simulation for lower Nodes 
+- W/L is constant but the curve `XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8` **w=1.8 l=1.2** and  **w=0.375 l=0.25** all in `micron`.
+- It can be clearly observe that current values in first reaching above 200 and in other it is below 140.
+- That is current in saturation and adjacent curves appear different though the `W/L` = `1.5` ratio is same.
+- Observation **Drain current has Quadratic dependence Vgs proven from above curves**
+  
+<img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/90a01b40-1259-4902-a222-c1b4c419d407" />          <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/2161c7cf-0466-4709-b16d-861d458fc3c4" />
+
+### Drain Current vs Voltage for Long and short channel device
+- Drain current has Quadratic increases with gate voltage Vgs
+- For short channel we observe short channel affects at lower nodes due to velocity saturation device (below 0.2 micron).
+- **Velocity Saturation Effect** a single constant voltage by changing the file   `.dc Vdd 0 1.8 0.1 Vin 0 1.8 1.8`
+
+<img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/c74a3db1-9b8f-4b5e-b3e3-49f27add74b4" />       <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/d5af3190-c596-4e1e-a4b3-838098025a82" /> 
+  
+
 
 
 
