@@ -201,7 +201,8 @@ Vt = Vto + γ(√|−2φf + Vsb| − √|−2φf|)
 - **k**: Boltzmann constant = 1.38 × 10⁻²³ J/K
 - **T**: Absolute temperature (K)
 ```
-
+- Here the parameters better the Model to approximate the delays.
+  
 ## Physical Interpretation
 
 ### Body Effect
@@ -219,5 +220,147 @@ This phenomenon is called the **body effect** or **back-gate effect**.
 - Higher substrate doping increases both γ and |φf|
 - The body effect is important in circuits where source and body are not at the same potential
 - This effect is particularly significant in stacked transistor configurations and analog circuits
+
+### MOSFET Drain Current Equations
+- Linear Region
+```
+Id = kn · [(Vgs - Vt)Vds - Vds²/2]
+```
+- Saturation Region
+```
+Id = (Kn'/2) · (W/L) · (Vgs - Vt)² [1 + λVds]
+```
+`We provide these model paramters called Technology parameter Viz { kn`, Vto, γ} carefully and the other file as Netlist`
+
+<img width="250" height="290" alt="image" src="https://github.com/user-attachments/assets/13eeba38-50ed-41cd-9957-14e1b5a148f7" />
+
+- Spice has been feed with certain Syntax , its like c/c++ language.
+
+### Writing the Spice Syntax
+- We first make a linear model and assign some typical values.
+- Second define the Nodes and then write the same figure as a Spice Netlist.
+ 
+**Screenshot:** Showing Model and assigned typical Values.
+  
+<img width="943" height="277" alt="image" src="https://github.com/user-attachments/assets/1f9a824c-a33d-4958-9563-3e1255427597" />
+
+**Screenshot:** Spice Netlist generation from circuit diagram representation.
+
+<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/0742cae2-e7ee-46ea-a983-d384f4315603" />
+
+### `Line-by-Line Breakdown`
+```
+M1 vdd n1 0 0 nmos W=1.8u L=1.2u
+R1 in n1 55
+Vdd vdd 0 2.5
+Vin in 0 2.5
+```
+---
+
+### **1. MOSFET Definition: `M1 vdd n1 0 0 nmos W=1.8u L=1.2u`**
+```
+M<name> <drain> <gate> <source> <bulk> <model> [W=<width>] [L=<length>]
+M1 vdd n1 0 0 nmos W=1.8u L=1.2u
+│  │   │  │ │  │    │       │
+│  │   │  │ │  │    │       └─ Length = 1.2 microns
+│  │   │  │ │  │    └───────── Width = 1.8 microns
+│  │   │  │ │  └────────────── Model name (NMOS transistor)
+│  │   │  │ └───────────────── Bulk/Substrate (connected to ground/0)
+│  │   │  └─────────────────── Source (connected to ground/0)
+│  │   └────────────────────── Gate (connected to node n1)
+│  └────────────────────────── Drain (connected to vdd)
+└───────────────────────────── Component name (M1)
+```
+### **2. Resistor Definition: `R1 in n1 55`**
+```
+R<name> <node1> <node2> <resistance_value>
+R1 in n1 55
+│  │  │  │
+│  │  │  └─ Resistance value = 55 ohms
+│  │  └──── Node 2 (n1)
+│  └─────── Node 1 (in)
+└────────── Component name (R1)
+```
+### **3. Supply Voltage: `Vdd vdd 0 2.5`**
+```
+V<name> <positive_node> <negative_node> <DC_value>
+Vdd vdd 0 2.5
+│   │   │  │
+│   │   │  └─ Voltage value = 2.5V
+│   │   └──── Negative terminal (ground/node 0)
+│   └──────── Positive terminal (node vdd)
+└──────────── Voltage source name (Vdd)
+```
+### **4. Input Voltage: `Vin in 0 2.5`**
+```
+Vin in 0 2.5
+│   │  │  │
+│   │  │  └─ Voltage value = 2.5V
+│   │  └──── Negative terminal (ground/node 0)
+│   └─────── Positive terminal (node in)
+└─────────── Voltage source name (Vin)
+
+``` 
+| **Convention** | **Meaning** |
+|----------------|-------------|
+| Node 0 | Always ground reference |
+| **M** prefix | MOSFET device |
+| **R** prefix | Resistor |
+| **V** prefix | Voltage source |
+| **C** prefix | Capacitor |
+| **L** prefix | Inductor |
+| **Units** | u = micro (10⁻⁶), m = milli (10⁻³), p = pico (10⁻¹²) |
+
+- Third we need the technology file and parameters e.g 130 nm comes in a package.
+- `Important here` is the `technology name` of `component` must match with described in Netlist to evaluate properly.
+  
+<img width="399" height="291" alt="image" src="https://github.com/user-attachments/assets/0f84a63a-c767-4ebb-8921-92ee30e67d4b" />
+
+- Lastly the `Vds` must be sweeped from `0 to typical values` and that is where **`SPICE Simulation`** will come to evaluate the `Id` for different values of `Vgs` sweeping the Vds    till `Vgs-Vt` value.
+
+## First Simulation DC simulation to observe transistor behavior `DC sweep` and `operating point`
+
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/22ef1a36-b8a0-4a82-9d08-44b4a5cd59b9" />
+
+- We will use to cells `nfet_018` and `pfet_018` through out the Lab experiments.
+- Inside these `nfet_018` we have all the model library files describing parameters for that cell. Like `$less` `corner` spice file we have`W/L ratios` etc pre-characteised    to get proper simulation.
+- Likewise in Models -> Lib.spice contains for library files for N and P fet for different PVT corners
+- SPICE Netlist – Sky130 Example
+- This SPICE file simulates a simple NMOS circuit using the **Sky130 PDK**.  
+- It performs **DC sweep** and **operating point** analyses to observe transistor behavior.
+
+---
+## SPICE Code with Explanation
+```spice
+*---------------------------------------------
+* Model Description
+*---------------------------------------------
+.param temp=27                                  ## Sets simulation temperature to 27°C
+*---------------------------------------------
+* Including Sky130 library files
+*---------------------------------------------
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt  ## Loads Sky130 transistor models (typical corner)
+*---------------------------------------------
+* Netlist Description
+*---------------------------------------------
+XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=5 l=2  ## NMOS transistor: drain=Vdd, gate=n1, source=0, body=0, W=5µm, L=2µm
+R1 n1 in 55                                     ## 55Ω resistor between nodes n1 and in
+Vdd vdd 0 1.8V                                  ## DC supply voltage of 1.8V
+Vin in 0 1.8V                                   ## Input voltage source of 1.8V
+*---------------------------------------------
+* Simulation Commands
+*---------------------------------------------
+.op                                             ## Operating point analysis
+.dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2                 ## DC sweep: Vdd from 0→1.8 V (step 0.1 V) and Vin from 0→1.8 V (step 0.2 V)
+*---------------------------------------------
+* Control Section
+*---------------------------------------------
+.control
+run
+display
+setplot dc1
+.endc                                          ## Runs simulation and displays DC results
+.end                                           ## Hault
+```
 
 
