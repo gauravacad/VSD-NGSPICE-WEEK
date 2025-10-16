@@ -384,9 +384,11 @@ setplot dc1
 - For short channel we observe short channel affects at lower nodes due to velocity saturation device (below 0.2 micron).
 - **Velocity Saturation Effect** a single constant voltage by changing the file   `.dc Vdd 0 1.8 0.1 Vin 0 1.8 1.8`
 
-**Screen Shot:** Long Channel **w=1.8 l=1.2**  vs Short channel **w=0.375 l=0.25** at constant voltage of Vgs.
+**Screen Shot:** Long Channel **w=1.8 l=1.2**  vs Short channel **w=0.375 l=0.15** at constant voltage of Vgs.
 
-<img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/c74a3db1-9b8f-4b5e-b3e3-49f27add74b4" />       <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/d5af3190-c596-4e1e-a4b3-838098025a82" /> 
+ <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/05df4290-0bd3-4b07-939c-c7f12584bf55" />
+       <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/9d446aa0-1647-48f7-9982-728321ef07cd" />
+ 
   
 ### Velocity Saturation Effect
 - At lower field it is linear function and at higher field it is constatnt due to scattering effect.
