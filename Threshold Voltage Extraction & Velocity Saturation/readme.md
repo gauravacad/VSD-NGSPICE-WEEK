@@ -4,7 +4,12 @@
 CMOS voltage transfer characteristics (VTC) 
 - Device characteristics
 
-<img width="495" height="669" alt="image" src="https://github.com/user-attachments/assets/8f402588-f3b2-4a56-9482-a7ec9d28ebc0" />
+<img width="445" height="640" alt="image" src="https://github.com/user-attachments/assets/8a5f3436-7b9d-425e-b915-51e7a4ba048d" />
+
+
+
+
+
 
 
 <img width="500" height="281" alt="image" src="https://github.com/user-attachments/assets/1aba54cd-2322-4903-bf29-892d4c504e84" />
