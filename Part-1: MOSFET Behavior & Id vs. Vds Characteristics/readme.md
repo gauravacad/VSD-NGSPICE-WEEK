@@ -384,6 +384,7 @@ setplot dc1
 - **Velocity Saturation Effect** a single constant voltage by changing the file   `.dc Vdd 0 1.8 0.1 Vin 0 1.8 1.8`
 
 **Screen Shot:** Long Channel **w=1.8 l=1.2**  vs Short channel **w=0.375 l=0.25**
+
 <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/c74a3db1-9b8f-4b5e-b3e3-49f27add74b4" />       <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/d5af3190-c596-4e1e-a4b3-838098025a82" /> 
   
 
