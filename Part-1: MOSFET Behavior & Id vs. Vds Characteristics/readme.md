@@ -362,5 +362,14 @@ setplot dc1
 .endc                                          ## Runs simulation and displays DC results
 .end                                           ## Hault
 ```
+**ScreenShot:** Showing the command to Runt the DC analysis of Day `ngspice <file_name>`
+
+<img width="750" height="680" alt="image" src="https://github.com/user-attachments/assets/670a665f-99f0-4346-82e8-bc27c0b923ff" />
+
+**ScreenShot:** `Error` in result if we Plot without `-ve sign` e.g. **`plot vdd#branch`** else we get figure (b) **`plot -vdd#branch`**
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/2abe2621-7149-4c21-9f19-067a8f094232" />    <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/90b2fc1b-1d1a-4831-851b-54d1333466bc" />
+
+
 
 
