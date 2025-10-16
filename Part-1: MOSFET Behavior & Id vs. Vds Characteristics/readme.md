@@ -387,7 +387,10 @@ setplot dc1
 
 <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/c74a3db1-9b8f-4b5e-b3e3-49f27add74b4" />       <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/d5af3190-c596-4e1e-a4b3-838098025a82" /> 
   
-
+### Velocity Saturation Effect
+- At lower field it is linear function and at higher field it is constatnt due to scattering effect.
+- Vn(x) = mobility * electric field.
+- 
 
 
 
