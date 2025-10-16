@@ -2,7 +2,7 @@
 - Observe eAects of velocity saturation in short-channel regime
 
 CMOS voltage transfer characteristics (VTC) 
-- Device characteristics
+- Naming conventions for simplicity and model design
 
 <img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/5e1f68b5-26ae-4391-bcb5-0b43c5ce6f35" />
 
