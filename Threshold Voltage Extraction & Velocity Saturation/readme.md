@@ -28,6 +28,5 @@
 - **Observation** Current is negative due to direction
 -  Idsp= -Idsn these paremeters are enough to define the Nmos IdsN  vs VdsN curve
 
-<img width="605" height="381" alt="image" src="https://github.com/user-attachments/assets/a0653b52-d714-45da-a52a-9d645ecd6333" />
-
+<img width="605" height="381" alt="image" src="https://github.com/user-attachments/assets/f9e71432-bf8c-4037-9f56-a4ff2d0ae58b" />
 
