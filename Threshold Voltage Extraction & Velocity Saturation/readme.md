@@ -5,11 +5,14 @@
 ## CMOS voltage transfer characteristics (VTC) 
 - Naming conventions for simplicity and model design
 - Complementary to each other hence CMOS
-<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/5e1f68b5-26ae-4391-bcb5-0b43c5ce6f35" />
+
+**Screentshot:** Showing naming convetion for study and (II) figure showing when the Nmos will be `ON`
+
+<img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/5e1f68b5-26ae-4391-bcb5-0b43c5ce6f35" />   <img width="350" height="281" alt="image" src="https://github.com/user-attachments/assets/1aba54cd-2322-4903-bf29-892d4c504e84" />
 
 ---
 
-<img width="350" height="281" alt="image" src="https://github.com/user-attachments/assets/1aba54cd-2322-4903-bf29-892d4c504e84" />
+
 
 ---
 
