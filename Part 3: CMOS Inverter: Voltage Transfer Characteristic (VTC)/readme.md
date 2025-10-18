@@ -107,6 +107,7 @@ run
  <img width="1576" height="586" alt="image" src="https://github.com/user-attachments/assets/0dc5899e-3890-4fb5-b93b-753082333609" />
 
  ---
+ 
  **Screenshot** What we Observe? Cmos is a robust-device coz it maintain the same characteristics and therefore widely used to build any logic.
  
  <img width="1255" height="605" alt="image" src="https://github.com/user-attachments/assets/0e5f7398-fc42-456a-aa0f-e46bdfa8fb48" />
@@ -121,6 +122,34 @@ run
 - Want to calucalte or derive anlytic condition to observe early Vm or W/L to fetch either to achieve certain objective of (I,V)
 - As we know that at this critical juncture the `Idsp= -Idsn` which means simply => `Idsp + Idsn =0` **(KCL)** Vm totally depends on these values.
 - Our next analysis is we take `(1)` **W/L known values to approximate the Vm** and `(2)` **We take a Vm to approximate the ratio W/L**
-  
+
+``` bash
+# MOSFET Current Equations
+## Kirchhoff's Current Law
+I_dsp + I_dsn = 0
+## Drain Current Equations
+### NMOS Drain Current
+I_d = μn · C_ox · (W/L) · [[(V_gs - V_t) · V_dsat] - (V_dsat²/2)]
+### NMOS (Body Effect) AS CMOS will have substitution of Vth for Both P and N Mos
+I_dsn = k_n · [[(V_m - V_t) · V_dsatn] - (V_dsatn²/2)]
+### PMOS (Body Effect)
+I_dsp = k_p · [[(V_m - V_dd - V_t) · V_dsatp] - (V_dsatp²/2)]
+### using KCL we will solve to evalate Vm
+```
+
+### First **W/L known values to approximate the Vm**
+```
+# Solving for V_m
+V_m = R · V_dd / (1 + R)
+Where: gain factor
+R = (K_p · V_dsatp) / (K_n · V_dsatn) = [(W_p / L_p) · K_p' · V_dsatp] / [(W_n / L_n) · K_n' · V_dsatn]
+```
+
+### Conversely We derive the size of W and L of transistor from Vm
+
+```
+(W_p / L_p) / (W_n / L_n) = [K_n' · V_dsatn · [(V_m - V_t)] - (V_dsatn²/2)] / [K_p' · V_dsatp · [(-V_m + V_dd + V_t)] + (V_dsatp²/2)]
+```
+
 
 
