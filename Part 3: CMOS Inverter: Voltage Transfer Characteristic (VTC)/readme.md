@@ -20,8 +20,17 @@
 
 ## Let's Draw the Spice Model Load curve for Two Different W/L ratio 
 
-
-
+- The first figure idicator (circle) is in middle of the axis whereas the other one it is shifted to right. What we Observe?
+- We will observe the same in Day-3 Spice models. Let's Do that and later we write the observations
+  
  <img width="1576" height="586" alt="image" src="https://github.com/user-attachments/assets/0dc5899e-3890-4fb5-b93b-753082333609" />
+
+### Day3 Lab: VTC by sweeping Input Voltage. Here W=0.84 micron and L is 0.36 Load as 50 fF.
+- Common curve area is around 0.8 to 0.9 so we are switching area round 0.88 - 0.90.
+- By zooming we can say switching threshold for W/L ration around 2.3 0.86-0.87. We learn how to plot the switching threshold.
+- For transinet analysis we will using typical corner and nfet adn Pfet ratio as same. Total time period for 4nsec.
+
+  
+- 
 
 
