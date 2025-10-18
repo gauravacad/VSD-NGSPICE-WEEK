@@ -55,8 +55,12 @@ display
 <img width="707" height="578" alt="image" src="https://github.com/user-attachments/assets/28eafb74-3a53-4f7b-973e-bc748e19f4b0" />
 
 ---
+**Screenshot** Vth around 0.87
 
-- By zooming we can say switching threshold for W/L ration around 2.3 0.86-0.87. We learn how to plot the switching threshold.
+<img width="616" height="547" alt="image" src="https://github.com/user-attachments/assets/263da8ba-e49c-4fa2-8de9-bd66d689d1bc" />
+
+---
+- By zooming we can say switching threshold for W/L ration around 0.87. We learn how to plot the switching threshold.
 - For transinet analysis we will using typical corner and nfet adn Pfet ratio as same. Total time period for 4nsec.
 
   
