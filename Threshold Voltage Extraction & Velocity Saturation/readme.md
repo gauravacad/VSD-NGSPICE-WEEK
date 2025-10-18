@@ -43,5 +43,6 @@ The final step involves merging the two derived load curves for PMOS and NMOS to
 <img width="1576" height="459" alt="image" src="https://github.com/user-attachments/assets/6b28caf9-1322-4d6c-b3e6-675f68c75d55" />
 
 
-### 
-If we want to, derive the VTC of the CMOS. It has to be the intersection points between the Nmos and the Pmos load curves. For example, you have this V in curve for your p
+### CMOS Load curve drawing with intersaction of N-P Mos load curve
+If we want to, derive the VTC of the CMOS. It has to be the intersection points between the Nmos and the Pmos load curves. We will superimpose both curve at common points and then derive the therhold voltage for CMOS device. 
+
