@@ -20,9 +20,6 @@
 >[!tip]
 > **Note:** Larger noise margins indicate better noise immunity and more robust digital performance.
 
-### Noise Margin Introduction and Importance
-Noise margin is a critical parameter related to crosstalk noise and glitches, which are typical issues in lower technology nodes. Noise margin helps identify potential problems beforehand by evaluating the robustness of logic circuits. we aim to understand how CMOS inverter switching thresholds relate to noise margin performance across different inverter sizes?
-
 ### Basic Inverter Operation and Characteristics
 The fundamental inverter operation was explained where logic low input produces logic high output and vice versa. A voltage transfer characteristic graph was plotted with Vout on y-axis and Vin on x-axis, showing that when input is 0, output is VDD, and when input is high, output drops to zero. The switching occurs around VDD/2 due to PMOS and NMOS transistor behavior.
 
