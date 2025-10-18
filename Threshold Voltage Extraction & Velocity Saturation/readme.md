@@ -64,3 +64,8 @@ The NMOS load curve derivation is significantly simpler than PMOS due to circuit
 ### Final Integration Process
 The final step involves merging the two derived load curves for PMOS and NMOS to obtain voltage transfer characteristics of the CMOS inverter. Both curves now function in terms of Vin and Vout, eliminating dependencies on VGSP, VDSP, or IDSP parameters. The process requires removing unnecessary equations and merging the curves in the appropriate fashion. This integration will be demonstrated in the subsequent video session to complete the voltage transfer characteristics derivation for the CMOS inverter circuit.
 
+<img width="1576" height="459" alt="image" src="https://github.com/user-attachments/assets/6b28caf9-1322-4d6c-b3e6-675f68c75d55" />
+
+
+### 
+If we want to, derive the VTC of the CMOS. It has to be the intersection points between the Nmos and the Pmos load curves. For example, you have this V in curve for your p
