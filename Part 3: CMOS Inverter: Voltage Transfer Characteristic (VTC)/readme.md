@@ -104,4 +104,5 @@ run
 <img width="1318" height="552" alt="image" src="https://github.com/user-attachments/assets/463220be-3a83-43aa-889f-85564a2e92c3" />
 
 
+### Static behavior evaluation – CMOS inverter robustness – Switching Threshold
 
