@@ -18,8 +18,9 @@
 
 
 
+## Let's Draw the Spice Model Load curve for Two Different W/L ratio 
 
 
 
+  <img width="1000" height="384" alt="image" src="https://github.com/user-attachments/assets/ec077b6d-c0a1-4e46-ac65-72246c6d65fa" />
 
-  <img width="993" height="531" alt="image" src="https://github.com/user-attachments/assets/e6b0a780-b698-42d7-a4df-fb50f17d7bda" />
