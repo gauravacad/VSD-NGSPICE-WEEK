@@ -42,8 +42,9 @@
 
 ## Discussion on deriving the load curves for PMOs and NMOs. 
 ### Overview
-This technical session focused on deriving load curves for PMOS and NMOS transistors in CMOS inverter circuits. The discussion covered the conversion of node voltages, specifically transforming VGS (gate-to-source voltage) of PMOS as a function of V, and converting VDSP as a function of output voltage. Further we study the relationship where Vout equals VdsP plus VDD, demonstrating how curve shifting occurs by adding VDD to convert VdsP into output voltage function. 
-Key examples included VDSP values of negative 2 volts resulting in zero output voltage, representing completely discharged output capacitor requiring charging current. The session covered differences between analyzing PMOS independently versus within CMOS inverter context, emphasizing that NMOS analysis is simpler due to direct relationships where VGSN equals VIN and VDSN equals V out. 
+- This technical session focused on deriving load curves for PMOS and NMOS transistors in CMOS inverter circuits. The discussion covered the conversion of node voltages, specifically transforming VGS (gate-to-source voltage) of PMOS as a function of V, and converting VDSP as a function of output voltage. 
+- Further we study the relationship where Vout equals VdsP plus VDD, demonstrating how curve shifting occurs by adding VDD to convert VdsP into output voltage function. 
+- Key examples included VDSP values of negative 2 volts resulting in zero output voltage, representing completely discharged output capacitor requiring charging current. The session covered differences between analyzing PMOS independently versus within CMOS inverter context, emphasizing that NMOS analysis is simpler due to direct relationships where VGSN equals VIN and VDSN equals V out. 
 
 **The ultimate goal is merging PMOS and NMOS load curves to derive complete CMOS voltage transfer characteristics.**
 - Take the two derived load curves and merge them in the right fashion to get voltage transfer characteristics
