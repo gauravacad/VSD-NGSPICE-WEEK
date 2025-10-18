@@ -136,10 +136,10 @@ display
 
 ---
 
-> 🧠 **Observation:**  
+> 🧠 **LAB Observation:**  
 > Both **NMH** and **NML** are well-balanced (~0.65–0.75 V), indicating **good noise immunity** and **robust logic level separation** for the given CMOS inverter.
 
-### ✅ Summary
+### ✅ Overall Short Summary
 
 - **Logic ‘0’**: Stable between VOL–VIL  
 - **Logic ‘1’**: Stable between VIH–VOH  
