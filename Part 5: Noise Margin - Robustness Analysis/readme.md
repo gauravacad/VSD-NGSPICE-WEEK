@@ -4,73 +4,21 @@
 
 # Noise Margin for a basic CMOS Inverter Case:
 ### Overview
-- This session is focused on CMOS inverter noise margin analysis. Noise margin is critical for identifying crosstalk noise and glitches that commonly occur in lower   technology nodes, which can be identified beforehand through proper noise margin evaluation. The session covered the relationship between CMOS inverter switching    thresholds and noise robustness across different inverter sizes. 
-- Key voltage parameters were introduced including VIL (input low voltage around 1/4 of VDD), VIH (input high voltage around 3/4 of VDD), VOL (output low voltage),    and VOH (output high voltage). Using a 1-volt VDD example, VIL was demonstrated at 250 millivolts and VIH at 750 millivolts.
-- The presentation progressed from ideal inverter characteristics with infinite slope at VDD/2 switching point to more practical scenarios with finite slopes due to   real device resistances and capacitances.
+- This session is focused on CMOS inverter noise margin analysis. 
+- Voltage levels VOH, VIH, VIL, and VOL define noise margins. The  noise margins high is (NMH = VOH - VIH) and noise margin low (NML = VIL - VOL), which determine    a circuit's tolerance to noise variations.
+- Noise margin is critical for identifying crosstalk noise and glitches that commonly occur in lower   technology nodes, which can be identified beforehand through   proper noise margin evaluation.
+- Further we will discuss and covers the relationship between CMOS inverter switching thresholds and noise robustness across different inverter sizes. 
+- A head we will see few figures illustrating voltage thresholds and output logic states.
 
-# 🧠 Noise Margin Summary
-
-This document summarizes the concept of **Noise Margins**, **Logic Levels**, and how **glitches** or **noise spikes** affect digital logic outputs. The discussion is based on the two diagrams illustrating voltage thresholds and output logic states.
-
----
-
-
-
----
-
-## 🔹 Noise Margins
+🔹 Noise Margins
 
 | Type | Expression | Meaning |
 |------|-------------|----------|
 | **Noise Margin High (NM<sub>H</sub>)** | `NMH = VOH - VIH` | Maximum noise a logic ‘1’ can tolerate without being misinterpreted |
 | **Noise Margin Low (NM<sub>L</sub>)** | `NML = VIL - VOL` | Maximum noise a logic ‘0’ can tolerate without being misinterpreted |
 
+>[!tip]
 > **Note:** Larger noise margins indicate better noise immunity and more robust digital performance.
-
----
-
-## 🔹 Noise and Glitches
-
-In real circuits, **noise bumps** or **glitches** may temporarily alter the signal voltage:
-
-
-
----
-
-## 🔹 Design Insights
-
-- Keep signals **within NM<sub>L</sub>** and **NM<sub>H</sub>** ranges to maintain **reliable logic levels**.
-- **Undefined regions** should be avoided in practical circuit design.
-- Proper **noise margin design** improves immunity against voltage fluctuations, crosstalk, and switching noise.
-
----
-
-### 📘 Reference Equations
-
-\[
-NM_H = V_{OH} - V_{IH}
-\]
-\[
-NM_L = V_{IL} - V_{OL}
-\]
-
----
-
-### ✅ Summary
-
-- **Logic ‘0’**: Stable between VOL–VIL  
-- **Logic ‘1’**: Stable between VIH–VOH  
-- **Undefined Region**: Unstable and to be avoided  
-- **Noise Margins (NMH, NML)** define tolerance against external disturbances  
-
-> _Any signal in the undefined region will be of indefinite logic level._
-
----
-
-
-
-### Key Points
--Plot voltage levels (VIH, VIL, VOH, VOL) on a single voltage axis in Ngspice
 
 ### Noise Margin Introduction and Importance
 Noise margin is a critical parameter related to crosstalk noise and glitches, which are typical issues in lower technology nodes. Noise margin helps identify potential problems beforehand by evaluating the robustness of logic circuits. we aim to understand how CMOS inverter switching thresholds relate to noise margin performance across different inverter sizes?
@@ -119,4 +67,19 @@ Design Constraints and Next Stage Considerations
 | (b) **Bump in Undefined Region** | Between `VIL–VIH` | Output becomes **undefined or unstable** |
 | (c) **Bump > V<sub>IH</sub>** | Within `VIH–VOH` | Considered **logic ‘1’** |
 
+> In real circuits, **noise bumps** or **glitches** may temporarily alter the signal voltage
 > ⚠️ **Glitches** crossing into the undefined region can cause false triggering, metastability, or unpredictable circuit states.
+
+## Varying W/L ratio of Pmos and Nmos and realation to Noise margin
+- Through systematic analysis of PMOS width variations from 1x to 5x NMOS width, CMOS inverter robustness with noise margin variations remaining within acceptable     ranges despite fabrication imperfections.
+- We observe increasing PMOS width improves noise margin high , while noise margin low remains relatively stable.
+- The analysis proved CMOS inverters are suitable for digital design due to their immunity to noise variations, with fabrication tolerance variations of only 2-3%     being acceptable for practical applications.
+
+
+---
+### ✅ Summary
+
+- **Logic ‘0’**: Stable between VOL–VIL  
+- **Logic ‘1’**: Stable between VIH–VOH  
+- **Undefined Region**: Unstable and to be avoided  
+- **Noise Margins (NMH, NML)** define tolerance against external disturbances
