@@ -25,8 +25,11 @@
 <img width="500" height="281" alt="image" src="https://github.com/user-attachments/assets/56cc9461-5589-417b-91d2-d61c167824b2" />
 
 
-- **Observation** Current is negative due to direction
+- **Observation** Current is negative due to direction in prospective/reference of NMos device.
 -  Idsp= -Idsn these paremeters are enough to define the **N/Pmos IdsN  vs VdsN** curve
 
 <img width="605" height="381" alt="image" src="https://github.com/user-attachments/assets/f9e71432-bf8c-4037-9f56-a4ff2d0ae58b" />
 
+## Load curve and simulations 
+- We will look inverter in form such that it is function of two voltages i.e. Vin and Vout and get rib of Vgs etc and try to find/modify a way such that transfer characteristic of Cmos Inverter are function of Vin and Vout will be there
+- 
