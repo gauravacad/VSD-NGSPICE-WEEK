@@ -210,5 +210,8 @@ This section will reveals design insights for **CMOS inverter sizing** — analy
 
 ---
 
-
+# Reference 
+- VSD Lecture
+- All credits to VSD and @ Kunal Sir Lectures
+- Enjoyed too much!!
 
