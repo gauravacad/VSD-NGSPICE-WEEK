@@ -79,7 +79,7 @@ Design Constraints and Next Stage Considerations
 ## Digital vs Analog Design Applications
 The analysis concluded that CMOS inverters excel in digital design applications where logic 1 and logic 0 detection is paramount. The well-defined noise margin ranges ensure reliable digital operation even with fabrication variations. For analog applications requiring voltage amplification, the transition region with high gain characteristics provides the optimal operating point. This distinction helps designers choose appropriate operating regions based on application requirements, whether for digital logic gates or analog amplification circuits.
 
-<img width="743" height="601" alt="image" src="https://github.com/user-attachments/assets/58e5ed5d-b5bf-48cd-8cbd-85c5c9e05698" />
+<img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/58e5ed5d-b5bf-48cd-8cbd-85c5c9e05698" />
 
 ---
 
