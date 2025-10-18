@@ -52,3 +52,6 @@ The final step involves merging the two derived load curves for PMOS and NMOS to
   
 <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/dbf7ff11-9455-4067-b038-8a872ac04e48" />
 
+---
+**Next is VTC SpICE SIMULATIONS**
+**What an Eye Opener Lecture it was !!! I listened it trice very grateful to @ KUNAL Sir.** 
