@@ -27,6 +27,35 @@
 
 ### Day3 Lab: VTC by sweeping Input Voltage. Here W=0.84 micron and L is 0.36 Load as 50 fF.
 - Common curve area is around 0.8 to 0.9 so we are switching area round 0.88 - 0.90.
+
+`` bash
+*Model Description
+.param temp=27
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+*Netlist Description
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.15
+XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+Cload out 0 50fF
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+*simulation commands
+.op
+.dc Vin 0 1.8 0.01
+.control
+run
+setplot dc1
+display
+.endc
+.end
+```
+
+**Screenshot** Figure Plot `out vs in` "Showing the VTC characteristic of CMOS"
+
+<img width="707" height="578" alt="image" src="https://github.com/user-attachments/assets/28eafb74-3a53-4f7b-973e-bc748e19f4b0" />
+
+---
+
 - By zooming we can say switching threshold for W/L ration around 2.3 0.86-0.87. We learn how to plot the switching threshold.
 - For transinet analysis we will using typical corner and nfet adn Pfet ratio as same. Total time period for 4nsec.
 
