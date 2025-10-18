@@ -55,9 +55,10 @@ display
 <img width="707" height="578" alt="image" src="https://github.com/user-attachments/assets/28eafb74-3a53-4f7b-973e-bc748e19f4b0" />
 
 ---
-**Screenshot** Vth around 0.87
+**Screenshot** Vth around 0.87 (Vin=Vout)
 
-<img width="616" height="547" alt="image" src="https://github.com/user-attachments/assets/263da8ba-e49c-4fa2-8de9-bd66d689d1bc" />
+<img width="616" height="547" alt="image" src="https://github.com/user-attachments/assets/376d245f-4b3b-4af8-8576-6cf7c3b34390" />
+
 
 ---
 - By zooming we can say switching threshold for W/L ration around 0.87. We learn how to plot the switching threshold.
