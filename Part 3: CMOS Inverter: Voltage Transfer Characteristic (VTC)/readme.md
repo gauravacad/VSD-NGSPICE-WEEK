@@ -212,4 +212,64 @@ markdown# CMOS Inverter Sizing Analysis
 - **x=2**: Balanced delays, optimal for clocks, good noise margin
 - **x≥3**: Fast rise, slow fall, larger area/power
 
+# ⚙️ CMOS Delay vs Sizing Trade-offs
+
+This document presents experimental results and design insights for **CMOS inverter sizing** — analyzing how transistor width ratios affect **rise/fall delays**, **switching threshold (Vm)**, and **overall circuit performance**.
+
+---
+
+## 🧮 Table 1: Delay vs Sizing Data
+
+| **Wp/Lp** | **x·Wn/Ln** | **Rise Delay (ps)** | **Fall Delay (ps)** | **Vm (V)** |
+|------------|--------------|----------------------|----------------------|-------------|
+| Wp/Lp      | Wn/Ln        | 148                  | 71                   | 0.99        |
+| Wp/Lp      | 2Wn/Ln       | 80                   | 76                   | 1.20        |
+| Wp/Lp      | 3Wn/Ln       | 57                   | 80                   | 1.25        |
+| Wp/Lp      | 4Wn/Ln       | 45                   | 84                   | 1.35        |
+| Wp/Lp      | 5Wn/Ln       | 37                   | 88                   | 1.40        |
+
+---
+
+## ⚖️ Table 2: Comparative Observations & Design Guidelines
+
+| **x (Wp/Lp : xWn/Ln)** | **Delay Balance** | **Vm Behavior** | **Use Case / Design Insight** |
+|--------------------------|-------------------|------------------|-------------------------------|
+| **1×** | Unbalanced — Fast **fall**, slow **rise** | Low (0.99 V) — favors PMOS | Smallest area, low power, suitable for **non-critical logic paths** |
+| **2×** | **Balanced** — Rise ≈ Fall (80 ps ≈ 76 ps) | Mid (1.2 V ≈ Vdd/2) | Ideal for **clock buffers** (balanced delay, low jitter, minimal skew) |
+| **3×** | Faster **rise**, slower **fall** | Higher (1.25 V) | Favorable when **rising edge** timing is critical |
+| **4×** | Significantly faster **rise** | Higher (1.35 V) | Used for **rise-critical datapath** segments |
+| **5×** | Fastest **rise**, slowest **fall** | Highest (1.4 V) | **Edge-case optimization** — large area/power penalty |
+
+---
+
+## 💡 Design Insight
+
+- **x = 2** (`Wp/Lp = 2Wn/Ln`) offers the **best trade-off** between:
+  - Performance (balanced rise/fall)
+  - Power (moderate capacitance)
+  - Area (reasonable transistor size)
+- Ideal for:
+  - **Clock buffers** in clock tree synthesis  
+  - **Balanced logic gates** in high-speed designs  
+
+---
+
+## 📊 Summary of Trade-offs
+
+| **Ratio (x)** | **Performance** | **Power/Area** | **Recommended Use** |
+|----------------|------------------|----------------|----------------------|
+| **1×** | Fast fall, slow rise | Lowest | Non-critical logic paths |
+| **2×** | Balanced rise/fall | Moderate | Clock and balanced logic |
+| **3–5×** | Fast rise, slow fall | High | Edge-critical data paths |
+
+---
+
+### 🧠 Key Takeaway
+> The **2× sizing ratio** provides **optimal delay symmetry** and **Vm ≈ Vdd/2**, making it the most energy-efficient and timing-stable configuration for standard CMOS inverters.
+
+---
+
+**Author:** _CSIR CEERI Design Analysis_  
+**Date:** October 2025  
+**Category:** _ASIC / CMOS Design Optimization_
 
