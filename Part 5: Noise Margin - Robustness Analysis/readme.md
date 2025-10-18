@@ -51,7 +51,7 @@ Key voltage parameters were defined: VIL represents the maximum input voltage re
 | **Logic ‘0’ (Low)** | Between **V<sub>OL</sub>** and **V<sub>IL</sub>** | Recognized as a valid low-level logic signal |
 | **Undefined Region** | Between **V<sub>IL</sub>** and **V<sub>IH</sub>** | Not clearly identified as ‘0’ or ‘1’; may cause metastability or unpredictable behavior |
 
-### Practical Curve Analysis and Non-Idealities: Undefined and Glitches.
+### Glitch Classification Based on Noise Margins
 A more realistic voltage transfer curve was presented showing curved transitions instead of straight lines due to inverter non-idealities. The curve maintains negative slope in the transition region but exhibits gradual changes rather than sharp transitions. The practical curve demonstrates how real device characteristics affect the switching behavior and create margins around the ideal switching points.
 Design Constraints and Next Stage Considerations
 
@@ -67,13 +67,26 @@ Design Constraints and Next Stage Considerations
 > In real circuits, **noise bumps** or **glitches** may temporarily alter the signal voltage
 > ⚠️ **Glitches** crossing into the undefined region can cause false triggering, metastability, or unpredictable circuit states.
 
-## Varying W/L ratio of Pmos and Nmos and realation to Noise margin
+## PMOS Width Variation Analysis w.r.t noise margin
 - Through systematic analysis of PMOS width variations from 1x to 5x NMOS width, CMOS inverter robustness with noise margin variations remaining within acceptable     ranges despite fabrication imperfections.
 - We observe increasing PMOS width improves noise margin high , while noise margin low remains relatively stable.
 - The analysis proved CMOS inverters are suitable for digital design due to their immunity to noise variations, with fabrication tolerance variations of only 2-3%     being acceptable for practical applications.
 
+<img width="1881" height="895" alt="image" src="https://github.com/user-attachments/assets/85e9a1c6-89e9-427a-9e49-3ba446e7ccac" />
 
-.
+---
+
+## Digital vs Analog Design Applications
+The analysis concluded that CMOS inverters excel in digital design applications where logic 1 and logic 0 detection is paramount. The well-defined noise margin ranges ensure reliable digital operation even with fabrication variations. For analog applications requiring voltage amplification, the transition region with high gain characteristics provides the optimal operating point. This distinction helps designers choose appropriate operating regions based on application requirements, whether for digital logic gates or analog amplification circuits.
+
+<img width="743" height="601" alt="image" src="https://github.com/user-attachments/assets/58e5ed5d-b5bf-48cd-8cbd-85c5c9e05698" />
+
+---
+
+
+
+## Power Supply Scaling Transition
+The scaling discussion represents a natural progression from noise margin analysis, as smaller technology nodes introduce new challenges related to power supply voltages, noise immunity, and circuit robustness that build upon the fundamental noise margin concepts are learned.
 
 ### ✅ Summary
 
