@@ -14,7 +14,8 @@
 - Lets define the Netlist
 
 
-<img width="419" height="412" alt="image" src="https://github.com/user-attachments/assets/afcdfa86-8df1-4411-b201-cd08cbf9eeff" />
+<img width="419" height="412" alt="image" src="https://github.com/user-attachments/assets/afcdfa86-8df1-4411-b201-cd08cbf9eeff" />   ![Uploading image.png…]()
+
 
 
 
