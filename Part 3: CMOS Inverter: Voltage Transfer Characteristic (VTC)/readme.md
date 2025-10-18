@@ -150,71 +150,9 @@ R = (K_p · V_dsatp) / (K_n · V_dsatn) = [(W_p / L_p) · K_p' · V_dsatp] / [(W
 ```
 (W_p / L_p) / (W_n / L_n) = [K_n' · V_dsatn · [(V_m - V_t)] - (V_dsatn²/2)] / [K_p' · V_dsatp · [(-V_m + V_dd + V_t)] + (V_dsatp²/2)]
 ```
-
-markdown# CMOS Inverter Sizing Analysis
-
-## Delay vs Sizing Trade-offs
-
-| Wp/Lp | x.Wn/Ln | Rise delay | Fall delay | Vm    |
-|-------|---------|------------|------------|-------|
-| Wp/Lp | Wn/Ln   | 148ps      | 71ps       | 0.99v |
-| Wp/Lp | 2Wn/Ln  | 80ps       | 76ps       | 1.2v  |
-| Wp/Lp | 3Wn/Ln  | 57ps       | 80ps       | 1.25v |
-| Wp/Lp | 4Wn/Ln  | 45ps       | 84ps       | 1.35v |
-| Wp/Lp | 5Wn/Ln  | 37ps       | 88ps       | 1.4v  |
-
-## Key Observations
-
-### 1. **Balanced Delay Point (Wp/Lp = 2Wn/Ln)**
-- **Rise delay ≈ Fall delay** (80ps ≈ 76ps)
-- Approximately equal propagation delays in both directions
-- **Optimal for clock synthesis buffers** where symmetrical delay is critical
-- Switching threshold (Vm) = 1.2v ≈ Vdd/2 (assuming Vdd ≈ 2.4v)
-
-### 2. **Rise Delay Optimization (Higher x values)**
-- As NMOS width increases (x = 3, 4, 5), rise delay decreases significantly
-- However, fall delay increases proportionally
-- Trade-off: Faster rising edge at the cost of slower falling edge
-
-### 3. **Switching Threshold (Vm) Shift**
-- Vm increases from 0.99v to 1.4v as NMOS width increases
-- Wider NMOS pulls Vm higher (closer to Vdd)
-- Standard ratio (x=1) gives Vm ≈ 0.99v (unbalanced, favors PMOS)
-
-### 4. **Application-Specific Design Guidelines**
-
-#### **Clock Buffers (Clock Tree Synthesis)**
-- **Recommended ratio: Wp/Lp = 2Wn/Ln**
-- Symmetrical rise/fall delays minimize clock skew
-- Balanced switching threshold reduces jitter sensitivity
-- Critical for clock distribution networks
-
-#### **Data Path Buffers**
-- **Can use asymmetric sizing** based on critical path
-- If falling edge is critical: Use x = 1 (faster fall delay: 71ps)
-- If rising edge is critical: Use x = 4 or 5 (faster rise delay: 45ps, 37ps)
-- Trade-off speed for the non-critical transition
-
-#### **General Logic Gates**
-- Standard ratio (x=1) acceptable for non-critical paths
-- Use x=2 for better noise margins (Vm ≈ Vdd/2)
-- Higher x values increase input capacitance (loading effect)
-
-### 5. **Power and Area Considerations**
-- Larger transistor widths increase:
-  - Gate capacitance (higher dynamic power)
-  - Leakage current (higher static power)
-  - Silicon area
-- **x=2 ratio offers best performance/power/area balance** for most applications
-
-### 6. **Design Trade-offs Summary**
-- **x=1**: Unbalanced, fastest fall, smallest area
-- **x=2**: Balanced delays, optimal for clocks, good noise margin
-- **x≥3**: Fast rise, slow fall, larger area/power
-
 # ⚙️ CMOS Delay vs Sizing Trade-offs
 
-This document presents experimental results and design insights for **CMOS inverter sizing** — analyzing how transistor width ratios affect **rise/fall delays**, **switching threshold (Vm)**, and **overall circuit performance**.
+This section will reveals design insights for **CMOS inverter sizing** — analyzing how transistor width ratios affect **rise/fall delays**, **switching threshold (Vm)**, and **overall circuit performance**.
 
 ---
 
@@ -269,7 +207,5 @@ This document presents experimental results and design insights for **CMOS inver
 
 ---
 
-**Author:** _CSIR CEERI Design Analysis_  
-**Date:** October 2025  
-**Category:** _ASIC / CMOS Design Optimization_
+
 
