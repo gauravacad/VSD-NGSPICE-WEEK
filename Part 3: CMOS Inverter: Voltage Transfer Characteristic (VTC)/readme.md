@@ -28,7 +28,7 @@
 ### Day3 Lab: VTC by sweeping Input Voltage. Here W=0.84 micron and L is 0.36 Load as 50 fF.
 - Common curve area is around 0.8 to 0.9 so we are switching area round 0.88 - 0.90.
 
-`` bash
+``` bash
 *Model Description
 .param temp=27
 *Including sky130 library files
