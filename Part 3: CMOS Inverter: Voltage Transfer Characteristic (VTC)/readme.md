@@ -111,10 +111,16 @@ run
  
  <img width="1255" height="605" alt="image" src="https://github.com/user-attachments/assets/0e5f7398-fc42-456a-aa0f-e46bdfa8fb48" />
 
- **Screenshot** CMOS is a robust-device because of its parameter like Vth.
+ **Screenshot** CMOS is a robust-device because of its parameter like Switching threshold.
   
 <img width="1834" height="782" alt="image" src="https://github.com/user-attachments/assets/8886be61-138d-4337-a489-48d2ab02a14f" />
 
-
+### observation 
+- At this critical area when both are likely "ON" their is high possibility of leakage current too. But the Vm for the two different W/L is different.
+- At this condition the current is equal but the direct is differnt **Vgs=Vds** or **Vin=Vout** , `Idsp=-IdsN` boundary condition.
+- Want to calucalte or derive anlytic condition to observe early Vm or W/L to fetch either to achieve certain objective of (I,V)
+- As we know that at this critical juncture the `Idsp= -Idsn` which means simply => `Idsp + Idsn =0` **(KCL)** Vm totally depends on these values.
+- Our next analysis is we take `(1)` **W/L known values to approximate the Vm** and `(2)` **We take a Vm to approximate the ratio W/L**
+  
 
 
