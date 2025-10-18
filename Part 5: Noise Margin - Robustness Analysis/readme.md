@@ -114,21 +114,23 @@ display
 
 <img width="709" height="623" alt="image" src="https://github.com/user-attachments/assets/d65f6037-8644-4bc8-8143-73568ad0a3bd" />
 
+--- 
+
+**Screenshot:**  Plot for noise margin estimation, observing the right point at slopes.
+
 <img width="709" height="623" alt="image" src="https://github.com/user-attachments/assets/5d7b3afb-cd36-4007-a6c8-f5ff9e0ed5b1" />
 
-**Screenshot:**  Plot Vout vs Vin
-
-
-
+---
+<img width="699" height="259" alt="image" src="https://github.com/user-attachments/assets/3818baf0-9f28-41bc-8ad7-146447f32233" />
 
 ## 🔍 CMOS Inverter Noise Margin Analysis
 
 | Parameter | Description | Value (V) | Formula / Relation |
 |------------|--------------|-----------|--------------------|
-| **ViL** | Input voltage at transition (low → high) | 0.741758 | Given |
-| **ViH** | Input voltage at transition (high → low) | 0.991209 | Given |
-| **VoL** | Output voltage (logic 0) | 0.08636 | Given |
-| **VoH** | Output voltage (logic 1) | 1.74545 | Given |
+| **ViL** | Input voltage at transition (low → high) | 0.741758 | x0 |
+| **ViH** | Input voltage at transition (high → low) | 0.991209 | x0 |
+| **VoL** | Output voltage (logic 0) | 0.08636 | Y0 |
+| **VoH** | Output voltage (logic 1) | 1.74545 | Y0 |
 | **NMH** | Noise Margin High | **0.754** | `VoH − ViH` |
 | **NML** | Noise Margin Low | **0.655** | `ViL − VoL` |
 
