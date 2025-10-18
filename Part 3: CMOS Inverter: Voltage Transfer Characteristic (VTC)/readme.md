@@ -1,4 +1,4 @@
-<img width="3536" height="1004" alt="image" src="https://github.com/user-attachments/assets/a7800ba4-0cae-45fd-97e5-126088ac7954" /># Objective 
+# Given Objectives
 - Build a CMOS inverter (PMOS + NMOS) 
 - Sweep input, plot ( V{out} ) vs. ( V{in} ) 
 - Identify the switching threshold ( Vm ) (point where ( V{in} = V{out} ))
