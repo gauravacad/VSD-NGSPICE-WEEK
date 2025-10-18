@@ -99,7 +99,9 @@ run
 
 ---
 
-**Screenshot** Figure Plot Fall time calcuataion observed as ~0.28ns
+**Screenshot** Figure Plot Fall time calcuataion observed as ~0.285 ns
+
+<img width="1318" height="552" alt="image" src="https://github.com/user-attachments/assets/463220be-3a83-43aa-889f-85564a2e92c3" />
 
 
 
