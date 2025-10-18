@@ -85,10 +85,57 @@ The analysis concluded that CMOS inverters excel in digital design applications 
 
 ---
 
+### LAB 4 Plotting Noise Margin in NGSPICE
+- Evaluating the Noise margin witht the script below.
+  
+``` bash
+*Model Description
+.param temp=27
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+*Netlist Description
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=1 l=0.15
+XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+Cload out 0 50fF
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+*simulation commands
+.op
+.dc Vin 0 1.8 0.01
+.control
+run
+setplot dc1
+display
+.endc
+.end
+```
+
+**Screenshot:**  Plot Vout vs Vin
+
+<img width="709" height="623" alt="image" src="https://github.com/user-attachments/assets/d65f6037-8644-4bc8-8143-73568ad0a3bd" />
+
+<img width="709" height="623" alt="image" src="https://github.com/user-attachments/assets/5d7b3afb-cd36-4007-a6c8-f5ff9e0ed5b1" />
+
+**Screenshot:**  Plot Vout vs Vin
 
 
-## Power Supply Scaling Transition
-The scaling discussion represents a natural progression from noise margin analysis, as smaller technology nodes introduce new challenges related to power supply voltages, noise immunity, and circuit robustness that build upon the fundamental noise margin concepts are learned.
+
+
+## 🔍 CMOS Inverter Noise Margin Analysis
+
+| Parameter | Description | Value (V) | Formula / Relation |
+|------------|--------------|-----------|--------------------|
+| **ViL** | Input voltage at transition (low → high) | 0.741758 | Given |
+| **ViH** | Input voltage at transition (high → low) | 0.991209 | Given |
+| **VoL** | Output voltage (logic 0) | 0.08636 | Given |
+| **VoH** | Output voltage (logic 1) | 1.74545 | Given |
+| **NMH** | Noise Margin High | **0.754** | `VoH − ViH` |
+| **NML** | Noise Margin Low | **0.655** | `ViL − VoL` |
+
+---
+
+> 🧠 **Observation:**  
+> Both **NMH** and **NML** are well-balanced (~0.65–0.75 V), indicating **good noise immunity** and **robust logic level separation** for the given CMOS inverter.
 
 ### ✅ Summary
 
@@ -96,3 +143,6 @@ The scaling discussion represents a natural progression from noise margin analys
 - **Logic ‘1’**: Stable between VIH–VOH  
 - **Undefined Region**: Unstable and to be avoided  
 - **Noise Margins (NMH, NML)** define tolerance against external disturbances
+
+## Next session is Power Supply Scaling Transition
+The scaling discussion represents a natural progression from noise margin analysis, as smaller technology nodes introduce new challenges related to power supply voltages, noise immunity, and circuit robustness that build upon the fundamental noise margin concepts are learned.
