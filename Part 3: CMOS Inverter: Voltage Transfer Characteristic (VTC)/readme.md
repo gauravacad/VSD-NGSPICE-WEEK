@@ -62,9 +62,44 @@ display
 
 ---
 - By zooming we can say switching threshold for W/L ration around 0.87. We learn how to plot the switching threshold.
-- For transinet analysis we will using typical corner and nfet adn Pfet ratio as same. Total time period for 4nsec.
 
+### Transient Analyis 
+- Script for transient analysis we give pulse width of 2 nsec and rise-fall time as 0.1 ns
+- To calculate the rise and fall delay consider 50% of Vdd.
+- Plot out vs time
   
-- 
+``` bash
+*Model Description
+.param temp=27
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+*Netlist Description
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=0.84 l=0.15
+XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.36 l=0.15
+Cload out 0 50fF
+Vdd vdd 0 1.8V
+*Giving Pulse with pulsewidth of 2ns and risetime and fall time as 0.2nsec period 4ns
+Vin in 0 PULSE(0V 1.8V 0 0.1ns 0.1ns 2ns 4ns)
+*simulation commands
+.tran 1n 10n
+.control
+run
+.endc
+.end
+```
+
+<img width="707" height="628" alt="image" src="https://github.com/user-attachments/assets/3beb29eb-10e3-4e00-93a9-77268f0444f1" />
+
+---
+### To calculate the Plots of Rise and Fall consider Vdd as 0.9 and then right click on plot to extract the values 
+
+**Screenshot** Figure Plot Rise time calcuataion observed as ~0.33ns
+
+<img width="1365" height="553" alt="image" src="https://github.com/user-attachments/assets/1544d602-a876-46ab-a570-ff8ce31770d7" />
+
+---
+
+**Screenshot** Figure Plot Fall time calcuataion observed as ~0.28ns
+
 
 
