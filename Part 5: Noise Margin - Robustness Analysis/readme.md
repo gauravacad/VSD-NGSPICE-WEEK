@@ -20,8 +20,8 @@
 >[!tip]
 > **Note:** Larger noise margins indicate better noise immunity and more robust digital performance.
 
-### Basic Inverter Operation and Characteristics
-The fundamental inverter operation was explained where logic low input produces logic high output and vice versa. A voltage transfer characteristic graph was plotted with Vout on y-axis and Vin on x-axis, showing that when input is 0, output is VDD, and when input is high, output drops to zero. The switching occurs around VDD/2 due to PMOS and NMOS transistor behavior.
+### Basic Inverter Operation and Noise margin
+The foundation for understanding noise margins by plotting voltage levels VOH, VIH, VIL, and VOL on a scale. VOH represents the highest voltage level, positioned close to VDD, followed by VIH. The critical relationship VOH > VIH ensures proper logic 1 detection at the next stage. Similarly, VIL > VOL relationship ensures logic 0 detection, with VOL being the lowest output voltage. An undefined region exists between VIH and VIL where voltage levels cannot be reliably classified as logic 1 or 0. These voltage specifications become part of chip specifications and define the operational boundaries for digital circuits
 
 <img width="773" height="563" alt="image" src="https://github.com/user-attachments/assets/36f42c35-9930-425c-854b-538052a6c002" />
 
@@ -73,7 +73,8 @@ Design Constraints and Next Stage Considerations
 - The analysis proved CMOS inverters are suitable for digital design due to their immunity to noise variations, with fabrication tolerance variations of only 2-3%     being acceptable for practical applications.
 
 
----
+.
+
 ### ✅ Summary
 
 - **Logic ‘0’**: Stable between VOL–VIL  
