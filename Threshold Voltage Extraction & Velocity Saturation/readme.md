@@ -49,5 +49,6 @@ The final step involves merging the two derived load curves for PMOS and NMOS to
 - If we want to, derive the VTC of the CMOS. It has to be the intersection points between the Nmos and the Pmos load curves.     We will superimpose both curve at common points and then derive the therhold voltage for CMOS device. 
 - The graphical figure reveals all the state as we need to determine by carefully observing.
 - The careful observation reavels when the CMOS is used for `Digital` and `Analog` Devices that is when CMOS has both N and P    Mos are in saturation the `gain is High` which is much needed for Analog circuit design.
-- 
+  
+<img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/dbf7ff11-9455-4067-b038-8a872ac04e48" />
 
