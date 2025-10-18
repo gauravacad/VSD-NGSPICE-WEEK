@@ -1,4 +1,4 @@
-# Objective 
+<img width="3536" height="1004" alt="image" src="https://github.com/user-attachments/assets/a7800ba4-0cae-45fd-97e5-126088ac7954" /># Objective 
 - Build a CMOS inverter (PMOS + NMOS) 
 - Sweep input, plot ( V{out} ) vs. ( V{in} ) 
 - Identify the switching threshold ( Vm ) (point where ( V{in} = V{out} ))
@@ -189,6 +189,9 @@ This section will reveals design insights for **CMOS inverter sizing** — analy
 - Ideal for:
   - **Clock buffers** in clock tree synthesis  
   - **Balanced logic gates** in high-speed designs  
+
+<img width="1200" height="750" alt="image" src="https://github.com/user-attachments/assets/0ba87402-1595-4221-b09f-3905ce8546f2" />
+
 
 ---
 
