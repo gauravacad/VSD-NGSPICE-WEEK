@@ -44,5 +44,8 @@ The final step involves merging the two derived load curves for PMOS and NMOS to
 
 
 ### CMOS Load curve drawing with intersaction of N-P Mos load curve
+** It reveals the states of NMOS and PMOS devices when input voltage is sweeping from 0 to given voltage=2V.
 If we want to, derive the VTC of the CMOS. It has to be the intersection points between the Nmos and the Pmos load curves. We will superimpose both curve at common points and then derive the therhold voltage for CMOS device. 
+- When VN=0 AND vOUT=2 THE PMOS IS IN LINEAR REGION ADN nMOS LIE IN CUTOFF, WE HAVE LEAKAGE CURRENT.
+- 
 
