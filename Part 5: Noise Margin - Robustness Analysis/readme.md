@@ -69,8 +69,10 @@ Design Constraints and Next Stage Considerations
 
 ## PMOS Width Variation Analysis w.r.t noise margin
 - Through systematic analysis of PMOS width variations from 1x to 5x NMOS width, CMOS inverter robustness with noise margin variations remaining within acceptable     ranges despite fabrication imperfections.
-- We observe increasing PMOS width improves noise margin high , while noise margin low remains relatively stable.
-- The analysis proved CMOS inverters are suitable for digital design due to their immunity to noise variations, with fabrication tolerance variations of only 2-3%     being acceptable for practical applications.
+- We observe increasing PMOS width improves noise margin high , while noise margin low remains relatively stable as NMOS is responsible for that.
+- **Pmos is responsible for charge of capacitance and when we increase the size it can retain the charge for longer time**
+- **If you increase the Width of Pmos high margin whereas no change in lower margin because NMOS cannot hold output zero.** 
+- **Same time stronger PMOS limits the NMOS hold ability and thereby NMOS noise margin values gets deminssed.** 
 
 <img width="1881" height="895" alt="image" src="https://github.com/user-attachments/assets/85e9a1c6-89e9-427a-9e49-3ba446e7ccac" />
 
