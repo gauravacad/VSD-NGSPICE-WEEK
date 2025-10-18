@@ -32,4 +32,12 @@
 
 ## Load curve and simulations 
 - We will look inverter in form such that it is function of two voltages i.e. Vin and Vout and get rib of Vgs etc and try to find/modify a way such that transfer characteristic of Cmos Inverter are function of Vin and Vout will be there
-- 
+- Example Static Cmos Inverter
+- We assume it is long device channel and we take Vdd=2v
+- First step is we will fill the tables as per Equations with IdsN current as    IdsP= -IdsN 
+  
+<img width="277" height="188" alt="image" src="https://github.com/user-attachments/assets/8c06a1fc-ed6f-4fb4-ab86-b04f7ab5bde6" />  <img width="281" height="187" alt="image" src="https://github.com/user-attachments/assets/ec7a1f24-12e5-4f7e-938f-519d7800eb5e" />
+
+<img width="402" height="382" alt="image" src="https://github.com/user-attachments/assets/c8007661-8600-4992-ac79-2990a7a28711" />
+
+
