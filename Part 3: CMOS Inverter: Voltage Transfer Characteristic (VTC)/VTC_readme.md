@@ -1,21 +1,4 @@
-# ⚡ CMOS Inverter – SPICE Simulation and Design Analysis
 
-A complete exploration of **CMOS inverter design**, simulation, and characterization using **Sky130 PDK**.  
-This lab walks through SPICE simulations, **VTC**, **transient response**, **switching threshold**, and **delay vs sizing trade-offs**.
-
----
-
-## 📚 Table of Contents
-1. [Objectives](#-given-objectives)
-2. [SPICE Deck & Netlist](#-spice-deck)
-3. [VTC Simulation (DC Sweep)](#-day3-lab-vtc-by-sweeping-input-voltage)
-4. [Transient Analysis](#-transient-analyis)
-5. [Static Behavior & Robustness](#-static-behavior-evaluation--cmos-inverter-robustness--switching-threshold)
-6. [Analytical Vm Derivation](#-first-wl-known-values-to-approximate-the-vm)
-7. [Delay vs Sizing Trade-offs](#️-cmos-delay-vs-sizing-trade-offs)
-8. [References](#-reference)
-
----
 
 ## 🎯 Given Objectives
 - Build a **CMOS inverter (PMOS + NMOS)**
