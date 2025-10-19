@@ -1,3 +1,8 @@
+# Objective Target 
+- Vary supply voltage ( Vdd ) and re-plot VTCs to observe how switching threshold shifts 
+- Modify transistor sizing (e.g. W/L of PMOS or NMOS) to simulate device variation, and observe affects on VTC, noise margins, delays
+
+
 # 📘  Introduction to CMOS Gain, Energy, and Delay Trade-offs
 
 - This section explores how **supply voltage, gain, and dynamic behavior** impact the performance of CMOS circuits.  
@@ -18,20 +23,16 @@
   - However, operating near threshold may **degrade switching speed** or even **cause functional failure**.
 
 - **Power Dissipation Dependency**
-  - The **dynamic power** in CMOS is given by:
+ - The **dynamic power** in CMOS is given by:
 
-    \[
-    P = {1}/{2} C V^2 f
-    \]
+  **P = ½ × C × V² × f**
 
-  - Reducing supply voltage from **5 V to 2.5 V** results in about **96% reduction in dynamic power** (since \( P \propto V^2 \)).
-  - Example:
+- Reducing supply voltage from **5 V to 2.5 V** results in about **96 % reduction in dynamic power** (since *P ∝ V²*).
 
-    \[
-    \left(\frac{2.5}{5}\right)^2 = 0.25 \Rightarrow 75\% \text{ less power per transition}
-    \]
+- Example:
 
-    When combined with lower switching activity, the **total energy saving can reach up to ~96%**.
+  **(2.5 / 5)² = 0.25 → 75 % less power per transition**
+- When combined with lower switching activity, the **total energy saving can reach up to ~96%**.
 
 - **Impact on Delay and Performance**
   - Lower VDD leads to **slower transistor switching** due to reduced drive current.
@@ -117,7 +118,9 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
 
 
-![Uploading image.png…]()
+
+
+<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/81c8d556-0b5d-46ef-a93d-fdd1933575ae" />
 
 
 ## 🔬 Next Steps: SPICE Simulation Studies
@@ -139,5 +142,11 @@ To validate these concepts, SPICE simulations will be conducted to observe:
   - Short-channel and leakage effects in deep submicron technologies  
 
 
-### Etching Process variations , oxidation variation and device variation 
+### Etching Process variations 
+- Device Variation Sources Introduction
+- Etching process identified as primary fabrication-related variation source
+- Etching defines transistor structure dimensions including width and height
+- Process variations directly impact cell delay and performance characteristics
+- CMOS inverter robustness testing planned against device parameter variations
 
+### Oxidation variation and device variation 
