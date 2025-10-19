@@ -1,8 +1,3 @@
-# Objective Target 
-- Vary supply voltage ( Vdd ) and re-plot VTCs to observe how switching threshold shifts 
-- Modify transistor sizing (e.g. W/L of PMOS or NMOS) to simulate device variation, and observe affects on VTC, noise margins, delays
-
-
 # 📘  Introduction to CMOS Gain, Energy, and Delay Trade-offs
 
 - This section explores how **supply voltage, gain, and dynamic behavior** impact the performance of CMOS circuits.  
