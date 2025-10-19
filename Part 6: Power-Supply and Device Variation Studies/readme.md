@@ -142,10 +142,11 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 <img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/8992e3fd-2102-4567-8649-308fff99908e" />
 
 ## LAB : DEVICE VARIATIONS 
--
--
+- Observation in Curve we plotted is strong Hold in Vdd in Pmos instead of Nmos  in VTC curve. Reason of Pfet width is much higher than Nfet width.
+- It inheretly menas the drive strength of Pfet is much higher than Nfet.
+- Also compare to earlier VTC Plot we can observe the Vm=0.9 and now shifter to right and now it si 0.988.
+  
 
-**Screenshot:** Plotting the graph of Five DC analysis plots labeled DC1 through DC5 for different supply voltages
 ``` bash
 Model Description
 .param temp=27
@@ -168,7 +169,13 @@ display
 .end
 ```
 
+**Screenshot:** Plotting VTC curve varying N-P MOS device from extreme cases i.e. stronger Pfet and Weaker Nfet case.
 
+<img width="709" height="590" alt="image" src="https://github.com/user-attachments/assets/f1a523ee-5229-4a4e-9fdb-6dddab894328" />
+
+**Screenshot:** VTC - Vm shift from 0.9 to 0.988
+
+<img width="709" height="590" alt="image" src="https://github.com/user-attachments/assets/a5ef979b-d600-4fbe-b2a7-de01fc437923" />
 
 
 ## 📘 Summary: CMOS Inverter Behavior Under Device Variations
