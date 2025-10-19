@@ -90,13 +90,16 @@ ylabel "output voltage(V)" title "Inveter dc characteristics as a function of su
   
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/32a92e02-b24c-4499-a121-87228ff3e040" />
 
+
 **Screenshot:** Gain calculation choosing two points where the change occurs as marked yellow points.
+<img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
+
+
 - Observation: Lower voltage curves appear sharper, resulting in higher gain for small input voltage changes
 - Significant power savings potential for mobile devices and battery-powered applications
 - Gain calculation using the curve=  (Y02- Y01) / (X01 -X02 )= 8.15
 - Insufficient supply voltage prevents complete charging/discharging within standard rise times.
   
-<img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
 
 
 ---
@@ -142,6 +145,7 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 -
 -
 
+**Screenshot:** Plotting the graph of Five DC analysis plots labeled DC1 through DC5 for different supply voltages
 ``` bash
 Model Description
 .param temp=27
@@ -164,7 +168,10 @@ display
 .end
 ```
 
-📘 Summary: CMOS Inverter Behavior Under Device Variations
+
+
+
+## 📘 Summary: CMOS Inverter Behavior Under Device Variations
 - The switching threshold (Vm) shows minimal shift, ensuring that the CMOS inverter continues to function reliably even under device parameter variations.
 - When varying device strengths from strong NMOS to weak NMOS (and vice versa), the change in noise margins remains small, demonstrating good design robustness.
 - The undefined region exhibits a higher gain, which can potentially cause instability if the operating point falls within this region.
