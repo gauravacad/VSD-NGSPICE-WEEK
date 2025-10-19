@@ -21,7 +21,7 @@
   - The **dynamic power** in CMOS is given by:
 
     \[
-    P = \frac{1}{2} C V^2 f
+    P = {1}/{2} C V^2 f
     \]
 
   - Reducing supply voltage from **5 V to 2.5 V** results in about **96% reduction in dynamic power** (since \( P \propto V^2 \)).
