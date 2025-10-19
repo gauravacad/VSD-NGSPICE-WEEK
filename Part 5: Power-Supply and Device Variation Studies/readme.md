@@ -112,7 +112,7 @@ To validate these concepts, SPICE simulations will be conducted to observe:
   - Process, Voltage, and Temperature (PVT) fluctuations  
   - Short-channel and leakage effects in deep submicron technologies
 
-### Etching Process variations 
+### Etching and Oxide variations Process variations 
 - Device Variation Sources Introduction
 - Etching process identified as primary fabrication-related variation source
 - Etching defines transistor structure dimensions including width and height
@@ -129,6 +129,8 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 - Resistance relationship follows R = ρL/A formula where increased area reduces resistance
 - Extreme device combinations planned to test CMOS inverter immunity to variations
 
-
 <img width="705" height="592"  alt="image" src="https://github.com/user-attachments/assets/ae82c5e0-cca4-4373-9357-d5cc4383a97c" />
 
+
+
+<img width="1499" height="1001" alt="image" src="https://github.com/user-attachments/assets/8992e3fd-2102-4567-8649-308fff99908e" />
