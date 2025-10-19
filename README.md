@@ -30,7 +30,7 @@ To simulate and understand the **I–V characteristics** of NMOS and PMOS device
 **Learning Outcome:**  
 Established a clear foundation on **MOSFET operation** and its regions — essential for CMOS circuit understanding.
 
-🔗 **Reference:** [Part 1: MOSFET Behavior]([(https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)])
+🔗 **Reference:** [Part 1: MOSFET Behavior](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
