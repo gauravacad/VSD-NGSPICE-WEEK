@@ -11,7 +11,7 @@ Each section (Part 1–6) investigates a key design aspect, from **MOSFET charac
 1. [Part 1: MOSFET Behavior & Id–Vds Characteristics](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-1%3A%20MOSFET%20Behavior%20%26%20Id%20vs.%20Vds%20Characteristics)
 2. [Part 2: Threshold Voltage Extraction & Velocity Saturation](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-2%3AThreshold%20Voltage%20Extraction%20%26%20Velocity%20Saturation)
 3. [Part 3: CMOS Inverter: Voltage Transfer Characteristic (VTC)](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
-4. [Part 4: Transient Behavior: Rise–Fall Delays](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
+4. [Part 4: Transient Behavior: Rise–Fall Delays](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%204%3A%20Transient%20Behavior%3A%20Rise%20-%20Fall%20Delays)
 5. [Part 5: Noise Margin & Robustness Analysis](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%205%3A%20Noise%20Margin%20-%20Robustness%20Analysis)
 6. [Part 6: Power-Supply and Device Variation Studies](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%206%3A%20Power-Supply%20and%20Device%20Variation%20Studies)
 ---
