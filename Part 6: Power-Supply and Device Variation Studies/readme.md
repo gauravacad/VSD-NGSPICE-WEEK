@@ -128,25 +128,45 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 - Strong PMOS provides low resistance path for output capacitance charging
 - Resistance relationship follows R = ρL/A formula where increased area reduces resistance
 - Extreme device combinations planned to test CMOS inverter immunity to variations
-** Switching threshold Vm shift is minimum making that CMOS still behaves as inverter and          robust to intact its working with the devie variations.**
+** Switching threshold Vm shift is minimum making that CMOS still behaves as inverter and robust to intact its working with the devie variations.**
   
 <img width="705" height="592"  alt="image" src="https://github.com/user-attachments/assets/ae82c5e0-cca4-4373-9357-d5cc4383a97c" />
 
-- **The good Observation learned is When we vary the device from extreme cases that is strong       Nmos to Weak Nmos and Vice versa the variation in Noise margin is not bi enough.** 
--  The undefined region is has higher gain if the margin lies in that area may become issue or     problem. Here we can say the variations did not affect the Noise margins and is acceptable.
-   therefore we can say Operation of cmos is still intact. Thereby has wide applications.
+- **The good Observation learned is When we vary the device from extreme cases that is strong Nmos to Weak Nmos and Vice versa the variation in Noise margin is not     big enough.** 
+-  The undefined region is has higher gain if the margin lies in that area may become issue or problem. Here we can say the variations did not affect the Noise         margins and is acceptable.
+-  Therefore we can say Operation of cmos is still intact. Thereby has wide applications.
   
 <img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/8992e3fd-2102-4567-8649-308fff99908e" />
 
+## LAB : DEVICE VARIATIONS 
+-
+-
+
+``` bash
+Model Description
+.param temp=27
+*Including sky130 library files
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+*Netlist Description
+XM1 out in vdd vdd sky130_fd_pr__pfet_01v8 w=7 l=0.15
+XM2 out in 0 0 sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+Cload out 0 50fF
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+*simulation commands
+.op
+.dc Vin 0 1.8 0.01
+.control
+run
+setplot dc1
+display
+.endc
+.end
+```
 
 📘 Summary: CMOS Inverter Behavior Under Device Variations
-
-- The switching threshold (Vm) shows minimal shift, ensuring that the CMOS inverter continues     to function reliably even under device parameter variations.
-
-- When varying device strengths from strong NMOS to weak NMOS (and vice versa), the change in     noise margins remains small, demonstrating good design robustness.
-
-- The undefined region exhibits a higher gain, which can potentially cause instability if the     operating point falls within this region.
-
-- Despite these variations, the noise margins remain within acceptable limits, confirming         stable inverter operation.
-
-- Overall, the CMOS inverter maintains its intended behavior, showing strong tolerance to         process variations and making it suitable for a wide range of applications.
+- The switching threshold (Vm) shows minimal shift, ensuring that the CMOS inverter continues to function reliably even under device parameter variations.
+- When varying device strengths from strong NMOS to weak NMOS (and vice versa), the change in noise margins remains small, demonstrating good design robustness.
+- The undefined region exhibits a higher gain, which can potentially cause instability if the operating point falls within this region.
+- Despite these variations, the noise margins remain within acceptable limits, confirming stable inverter operation.
+- Overall, the CMOS inverter maintains its intended behavior, showing strong tolerance to process variations and making it suitable for a wide range of applications.
