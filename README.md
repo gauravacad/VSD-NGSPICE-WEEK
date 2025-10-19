@@ -1,6 +1,5 @@
 # VSD Hardware Design Program - NGSPICE for WEEK4
 ---
-### 📚 Contents
 
 # ⚙️ CMOS Inverter Characterization and SPICE Simulation Summary
 
