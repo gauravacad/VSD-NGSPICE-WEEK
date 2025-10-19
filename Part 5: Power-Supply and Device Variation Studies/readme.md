@@ -94,7 +94,8 @@ ylabel "output voltage(V)" title "Inveter dc characteristics as a function of su
 - Observation: Lower voltage curves appear sharper, resulting in higher gain for small input voltage changes
 - Significant power savings potential for mobile devices and battery-powered applications
 - Gain calculation using the curve=  (Y02- Y01) / (X01 -X02 )= 8.15
-
+- Insufficient supply voltage prevents complete charging/discharging within standard rise times.
+  
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
 
 
@@ -109,9 +110,7 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 **Dynamic behavior of CMOS** under:
   - Device parameter variations  
   - Process, Voltage, and Temperature (PVT) fluctuations  
-  - Short-channel and leakage effects in deep submicron technologies  
-
-<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/81c8d556-0b5d-46ef-a93d-fdd1933575ae" />
+  - Short-channel and leakage effects in deep submicron technologies
 
 ### Etching Process variations 
 - Device Variation Sources Introduction
@@ -120,6 +119,16 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 - Process variations directly impact cell delay and performance characteristics
 - CMOS inverter robustness testing planned against device parameter variations
 
-### Oxidation variation and device variation 
 
+<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/81c8d556-0b5d-46ef-a93d-fdd1933575ae" />
+
+### Device Variation Experiment Design
+- Strong PMOS configuration: 1.87 micron width (widest available, lowest resistance)
+- Weak NMOS configuration: 0.375 micron width (highest resistance)
+- Strong PMOS provides low resistance path for output capacitance charging
+- Resistance relationship follows R = ρL/A formula where increased area reduces resistance
+- Extreme device combinations planned to test CMOS inverter immunity to variations
+
+
+<img width="705" height="592"  alt="image" src="https://github.com/user-attachments/assets/ae82c5e0-cca4-4373-9357-d5cc4383a97c" />
 
