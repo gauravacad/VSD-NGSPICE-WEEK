@@ -7,15 +7,13 @@ This repository documents a detailed exploration of **CMOS inverter behavior** u
 Each section (Part 1–6) investigates a key design aspect, from **MOSFET characteristics** to **robustness under variations**, with SPICE decks, observations, and analytical insights.
 
 ---
-
-## 📘 Contents
-1. [Part 1: MOSFET Behavior & Id–Vds Characteristics](#part-1-mosfet-behavior--id-vs-vds-characteristics)  
-2. [Part 2: Threshold Voltage Extraction & Velocity Saturation](#part-2-threshold-voltage-extraction--velocity-saturation)  
-3. [Part 3: CMOS Inverter: Voltage Transfer Characteristic (VTC)](#part-3-cmos-inverter-voltage-transfer-characteristic-vtc)  
-4. [Part 4: Transient Behavior: Rise–Fall Delays](#part-4-transient-behavior-rise---fall-delays)  
-5. [Part 5: Noise Margin & Robustness Analysis](#part-5-noise-margin---robustness-analysis)  
-6. [Part 6: Power Supply and Device Variation Studies](#part-6-power-supply-and-device-variation-studies)
-
+## 📘 Table of Contents
+1. [Part 1: MOSFET Behavior & Id–Vds Characteristics](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-1%3A%20MOSFET%20Behavior%20%26%20Id%20vs.%20Vds%20Characteristics)
+2. [Part 2: Threshold Voltage Extraction & Velocity Saturation](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-2%3AThreshold%20Voltage%20Extraction%20%26%20Velocity%20Saturation)
+3. [Part 3: CMOS Inverter: Voltage Transfer Characteristic (VTC)](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
+4. [Part 4: Transient Behavior: Rise–Fall Delays](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
+5. [Part 5: Noise Margin & Robustness Analysis](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%205%3A%20Noise%20Margin%20-%20Robustness%20Analysis)
+6. [Part 6: Power-Supply and Device Variation Studies](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%206%3A%20Power-Supply%20and%20Device%20Variation%20Studies)
 ---
 
 ## 🧩 Part 1: MOSFET Behavior & Id vs. Vds Characteristics
@@ -32,7 +30,7 @@ To simulate and understand the **I–V characteristics** of NMOS and PMOS device
 **Learning Outcome:**  
 Established a clear foundation on **MOSFET operation** and its regions — essential for CMOS circuit understanding.
 
-🔗 **Reference:** [Part 1: MOSFET Behavior (link)](https://example.com/part1)
+🔗 **Reference:** [Part 1: MOSFET Behavior (link)]([https://example.com/part1](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -50,7 +48,7 @@ To determine **threshold voltage (Vth)** and analyze **velocity saturation** eff
 **Learning Outcome:**  
 Understood that **Vth shifts** with channel length and body bias, and that **velocity saturation** limits drive current at nanoscale dimensions.
 
-🔗 **Reference:** [Part 2: Threshold Voltage (link)](https://example.com/part2)
+🔗 **Reference:** [Part 2: Threshold Voltage (link)]([https://example.com/part2](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -68,7 +66,7 @@ To build a CMOS inverter and analyze its **Voltage Transfer Characteristics (VTC
 **Learning Outcome:**  
 Demonstrated how **W/L ratios** influence **switching threshold** and how the inverter achieves **rail-to-rail logic levels**.
 
-🔗 **Reference:** [Part 3: CMOS Inverter VTC (link)](https://example.com/part3)
+🔗 **Reference:** [Part 3: CMOS Inverter VTC (link)]([https://example.com/part3](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -86,7 +84,7 @@ To perform **transient analysis** of the CMOS inverter by applying a **pulse inp
 **Learning Outcome:**  
 Established understanding of **propagation delay**, **asymmetric switching**, and **impact of load capacitance** on speed.
 
-🔗 **Reference:** [Part 4: Transient Analysis (link)](https://example.com/part4)
+🔗 **Reference:** [Part 4: Transient Analysis (link)]([https://example.com/part4](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -124,7 +122,7 @@ To evaluate inverter performance under **supply voltage** and **device parameter
 **Learning Outcome:**  
 Confirmed that CMOS inverters are **scalable and energy-efficient**, and that **switching threshold shifts** minimally with device variation.
 
-🔗 **Reference:** [Part 6: Power & Variation (link)](https://example.com/part6)
+🔗 **Reference:** [Part 6: Power & Variation (link)]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
