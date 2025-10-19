@@ -98,30 +98,20 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
 
-
-
-
-<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/81c8d556-0b5d-46ef-a93d-fdd1933575ae" />
-
-
-## 🔬 Next Steps: SPICE Simulation Studies
-
+---
+## 📚 Further Study Topics
 To validate these concepts, SPICE simulations will be conducted to observe:
 
 - Voltage Transfer Characteristics (VTC) for various supply voltages  
 - Gain calculation from VTC slope  
 - Delay variation with different VDD values  
 - Dynamic power estimation from switching activity  
-
----
-
-## 📚 Further Study Topics
-
-- **Dynamic behavior of CMOS** under:
+**Dynamic behavior of CMOS** under:
   - Device parameter variations  
   - Process, Voltage, and Temperature (PVT) fluctuations  
   - Short-channel and leakage effects in deep submicron technologies  
 
+<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/81c8d556-0b5d-46ef-a93d-fdd1933575ae" />
 
 ### Etching Process variations 
 - Device Variation Sources Introduction
