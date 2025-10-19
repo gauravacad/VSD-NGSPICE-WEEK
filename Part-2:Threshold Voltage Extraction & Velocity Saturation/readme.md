@@ -66,7 +66,7 @@ setplot dc1
 <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/1aba54cd-2322-4903-bf29-892d4c504e84" />
 
 ---
-## Discussion on deriving the load curves for PMOs and NMOs. 
+## Discussion on : The load curves for PMOs and NMOs. 
 ### Overview
 - This technical session focused on deriving load curves for PMOS and NMOS transistors in CMOS inverter circuits. The discussion covered the conversion of node voltages, specifically transforming VGS (gate-to-source voltage) of PMOS as a function of V, and converting VDSP as a function of output voltage. 
 - Further we study the relationship where Vout equals VdsP plus VDD, demonstrating how curve shifting occurs by adding VDD to convert VdsP into output voltage function. 
