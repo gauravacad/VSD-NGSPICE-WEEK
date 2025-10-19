@@ -48,7 +48,7 @@ To determine **threshold voltage (Vth)** and analyze **velocity saturation** eff
 **Learning Outcome:**  
 Understood that **Vth shifts** with channel length and body bias, and that **velocity saturation** limits drive current at nanoscale dimensions.
 
-🔗 **Reference:** [Part 2: Threshold Voltage]([https://example.com/part2](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 2: Threshold Voltage](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
@@ -66,7 +66,7 @@ To build a CMOS inverter and analyze its **Voltage Transfer Characteristics (VTC
 **Learning Outcome:**  
 Demonstrated how **W/L ratios** influence **switching threshold** and how the inverter achieves **rail-to-rail logic levels**.
 
-🔗 **Reference:** [Part 3: CMOS Inverter VTC (link)]([https://example.com/part3](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 3: CMOS Inverter VTC (link)](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
@@ -84,7 +84,7 @@ To perform **transient analysis** of the CMOS inverter by applying a **pulse inp
 **Learning Outcome:**  
 Established understanding of **propagation delay**, **asymmetric switching**, and **impact of load capacitance** on speed.
 
-🔗 **Reference:** [Part 4: Transient Analysis]([https://example.com/part4](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 4: Transient Analysis](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
@@ -104,7 +104,7 @@ To calculate **Noise Margins (NML & NMH)** and examine **robustness** under proc
 **Learning Outcome:**  
 Demonstrated that CMOS inverters maintain stable logic levels despite variations, proving **robustness** across conditions.
 
-🔗 **Reference:** [Part 5: Noise Margin]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 5: Noise Margin](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
@@ -122,7 +122,7 @@ To evaluate inverter performance under **supply voltage** and **device parameter
 **Learning Outcome:**  
 Confirmed that CMOS inverters are **scalable and energy-efficient**, and that **switching threshold shifts** minimally with device variation.
 
-🔗 **Reference:** [Part 6: Power & Variation]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 6: Power & Variation](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot)
 
 ---
 
