@@ -128,9 +128,25 @@ To validate these concepts, SPICE simulations will be conducted to observe:
 - Strong PMOS provides low resistance path for output capacitance charging
 - Resistance relationship follows R = ρL/A formula where increased area reduces resistance
 - Extreme device combinations planned to test CMOS inverter immunity to variations
-
+** Switching threshold Vm shift is minimum making that CMOS still behaves as inverter and          robust to intact its working with the devie variations.**
+  
 <img width="705" height="592"  alt="image" src="https://github.com/user-attachments/assets/ae82c5e0-cca4-4373-9357-d5cc4383a97c" />
 
+- **The good Observation learned is When we vary the device from extreme cases that is strong       Nmos to Weak Nmos and Vice versa the variation in Noise margin is not bi enough.** 
+-  The undefined region is has higher gain if the margin lies in that area may become issue or     problem. Here we can say the variations did not affect the Noise margins and is acceptable.
+   therefore we can say Operation of cmos is still intact. Thereby has wide applications.
+  
+<img width="705" height="592" alt="image" src="https://github.com/user-attachments/assets/8992e3fd-2102-4567-8649-308fff99908e" />
 
 
-<img width="1499" height="1001" alt="image" src="https://github.com/user-attachments/assets/8992e3fd-2102-4567-8649-308fff99908e" />
+📘 Summary: CMOS Inverter Behavior Under Device Variations
+
+- The switching threshold (Vm) shows minimal shift, ensuring that the CMOS inverter continues     to function reliably even under device parameter variations.
+
+- When varying device strengths from strong NMOS to weak NMOS (and vice versa), the change in     noise margins remains small, demonstrating good design robustness.
+
+- The undefined region exhibits a higher gain, which can potentially cause instability if the     operating point falls within this region.
+
+- Despite these variations, the noise margins remain within acceptable limits, confirming         stable inverter operation.
+
+- Overall, the CMOS inverter maintains its intended behavior, showing strong tolerance to         process variations and making it suitable for a wide range of applications.
