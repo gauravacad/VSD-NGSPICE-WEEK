@@ -55,6 +55,9 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 
 
 **Screenshot:** To find the gain we need to take ratio of two points where the graph is changing as marked yellow line.
-
+-  Gain = X02 -X01 / Y02- Y01 
 
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
+
+### Etching Process variations , oxidation variation and device variation 
+
