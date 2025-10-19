@@ -79,19 +79,24 @@ alter Vdd = powersupply
 	alter Vdd = powersupply
 	let voltagesupplyvariation = voltagesupplyvariation + 1
 end
-plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.out vs in xlabel "input voltage(V)" ylabel "output voltage(V)" title "Inveter dc characteristics as a function of supply voltage"
+plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.out vs in xlabel "input voltage(V)"
+ylabel "output voltage(V)" title "Inveter dc characteristics as a function of supply voltage"
 .endc
 .end
 ```
 
-**Screenshot:** Plotting the graph with varying supply voltage 
-
+**Screenshot:** Plotting the graph of Five DC analysis plots labeled DC1 through DC5 for different supply voltages
+- Results show distinct curve characteristics for each voltage level and preserve of curve across the variations making it robust for modelling and wide applications.
+  
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/32a92e02-b24c-4499-a121-87228ff3e040" />
 
-**Screenshot:** To find the gain we need to take ratio of two points where the graph is changing as marked yellow line.
--  Gain =  (Y02- Y01) / (X01 -X02 )= 8.15
+**Screenshot:** Gain calculation choosing two points where the change occurs as marked yellow points.
+- Observation: Lower voltage curves appear sharper, resulting in higher gain for small input voltage changes
+- Significant power savings potential for mobile devices and battery-powered applications
+- Gain calculation using the curve=  (Y02- Y01) / (X01 -X02 )= 8.15
 
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
+
 
 ---
 ## 📚 Further Study Topics
