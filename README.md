@@ -11,7 +11,7 @@ Each section (Part 1–6) investigates a key design aspect, from **MOSFET charac
 1. [Part 1: MOSFET Behavior & Id–Vds Characteristics](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-1%3A%20MOSFET%20Behavior%20%26%20Id%20vs.%20Vds%20Characteristics)
 2. [Part 2: Threshold Voltage Extraction & Velocity Saturation](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part-2%3AThreshold%20Voltage%20Extraction%20%26%20Velocity%20Saturation)
 3. [Part 3: CMOS Inverter: Voltage Transfer Characteristic (VTC)](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
-4. [Part 4: Transient Behavior: Rise–Fall Delays](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%204%3A%20Transient%20Behavior%3A%20Rise%20-%20Fall%20Delays)
+4. [Part 4: Transient Behavior: Rise–Fall Delays](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%203%3A%20CMOS%20Inverter%3A%20Voltage%20Transfer%20Characteristic%20(VTC))
 5. [Part 5: Noise Margin & Robustness Analysis](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%205%3A%20Noise%20Margin%20-%20Robustness%20Analysis)
 6. [Part 6: Power-Supply and Device Variation Studies](https://github.com/gauravacad/VSD-NGSPICE-WEEK/tree/main/Part%206%3A%20Power-Supply%20and%20Device%20Variation%20Studies)
 ---
@@ -30,7 +30,7 @@ To simulate and understand the **I–V characteristics** of NMOS and PMOS device
 **Learning Outcome:**  
 Established a clear foundation on **MOSFET operation** and its regions — essential for CMOS circuit understanding.
 
-🔗 **Reference:** [Part 1: MOSFET Behavior (link)]([https://example.com/part1](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 1: MOSFET Behavior]([https://example.com/part1](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -48,7 +48,7 @@ To determine **threshold voltage (Vth)** and analyze **velocity saturation** eff
 **Learning Outcome:**  
 Understood that **Vth shifts** with channel length and body bias, and that **velocity saturation** limits drive current at nanoscale dimensions.
 
-🔗 **Reference:** [Part 2: Threshold Voltage (link)]([https://example.com/part2](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 2: Threshold Voltage]([https://example.com/part2](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -84,7 +84,7 @@ To perform **transient analysis** of the CMOS inverter by applying a **pulse inp
 **Learning Outcome:**  
 Established understanding of **propagation delay**, **asymmetric switching**, and **impact of load capacitance** on speed.
 
-🔗 **Reference:** [Part 4: Transient Analysis (link)]([https://example.com/part4](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 4: Transient Analysis]([https://example.com/part4](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -104,7 +104,7 @@ To calculate **Noise Margins (NML & NMH)** and examine **robustness** under proc
 **Learning Outcome:**  
 Demonstrated that CMOS inverters maintain stable logic levels despite variations, proving **robustness** across conditions.
 
-🔗 **Reference:** [Part 5: Noise Margin (link)](https://example.com/part5)
+🔗 **Reference:** [Part 5: Noise Margin]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
@@ -122,7 +122,7 @@ To evaluate inverter performance under **supply voltage** and **device parameter
 **Learning Outcome:**  
 Confirmed that CMOS inverters are **scalable and energy-efficient**, and that **switching threshold shifts** minimally with device variation.
 
-🔗 **Reference:** [Part 6: Power & Variation (link)]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
+🔗 **Reference:** [Part 6: Power & Variation]([https://example.com/part6](https://www.udemy.com/course/vlsi-academy-circuit-design/?srsltid=AfmBOorIsNySPoeoUeR6sxZ3ZHzTM2YOlGLkyDa0r9rz445OUdjEL9ot))
 
 ---
 
