@@ -53,12 +53,13 @@ setplot dc1
 -  Vgsp= `Vin-vdd`
 -  Vdsp= `Vout-Vdd`
   
-**Screentshot:** Showing naming convetion for study and (II) figure showing when the Nmos will be `ON`
+- Figures below showing naming convetion for study and (II) figure showing when the Nmos will be `ON`
+
 
 **Screen Shot:** Making the CMoS model simple for understanding 
-
 <img width="350" height="350" alt="image" src="https://github.com/user-attachments/assets/5e1f68b5-26ae-4391-bcb5-0b43c5ce6f35" />   
 
+---
 **Screen Shot:** Basic NMOS On-OFF in nutshell
 <img width="400" height="350" alt="image" src="https://github.com/user-attachments/assets/1aba54cd-2322-4903-bf29-892d4c504e84" />
 
