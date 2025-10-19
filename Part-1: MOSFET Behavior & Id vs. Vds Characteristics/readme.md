@@ -1,7 +1,8 @@
+# Week 4 Part I objective
 - Simulate an NMOS device, sweeping (Vds) for different (Vgs), to observe linear and saturation regions 
--  Plot ( Id) vs. (Vds) curves
+- Plot ( Id) vs. (Vds) curves
 
-# Need of spice simulation 
+## Need of spice simulation 
 Example of buffer with some values of output loads in femto farad (fF).
 
 **Screenshot:** The example delay table for a Buffer 
@@ -18,12 +19,13 @@ Example of buffer with some values of output loads in femto farad (fF).
 - Though the value are not taken exactly from row 2 and column 3-4. hence the exact delay is not available.
 - So, we don’t need to run the spice simulation, as we have delay table that taking Input slew vs output load with the drive strengths / W/L ratios levels.
 - 
-## Some requirement of Spice simulation based on typical questions 
-- What is the source of table, How the characterization is done and these number are coming from and are different.
-- Are these delay models are accurate coz they are going in our chip circuit design and therefore we need to do the matching in simulaton.
+### Some requirement of Spice simulation based on typical questions 
+- What is the source of table, How the characterization is done and these number are coming from and are different?
+- Are these delay models are accurate coz they are going in our chip circuit design and therefore we need to do the matching in simulaton?
 - What ever we are doing in STA can be trusted or not? So need spice to verify?
 - So it involves characterization of N-P mos transistor and derive the I and vds of transistor and delay of these N or P mos when connected in different fasions.
-  ### Circuit design and Spice Simulation 
+- 
+### Circuit design and Spice Simulation 
 - `Circuit design` : We try to understand that what king of N or P Mos transistor are connected in certain fasion resulting in a different Logic e.g. `And gate` etc.
 - `Spice Simulation`: The above particlaur circuit posses certain characteristics i.e. NMos or PMos which actually decide the delay and decides W/L ratio and thereby drain current and the Vout-Vin curve.
 
@@ -35,16 +37,14 @@ Example of buffer with some values of output loads in femto farad (fF).
 
 <img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/47d0faf2-b430-49a0-979b-bab369a0ece0" />
 
-
 ---
-
 ### Thershold voltage 
 - We first ground all the terminals and what we extract are PN juncition behaviour back to back connected
 - Nothing is `ON`, Channel has high resistance , no conduction and this is called Source
 
  **Screenshot:** The Basic NMos strucutre and PMos is just invert of it.
  
-<img width="570" height="350" alt="image" src="https://github.com/user-attachments/assets/51471fcc-5d9c-40d6-8300-d7d3d24932d3" />
+ <img width="570" height="350" alt="image" src="https://github.com/user-attachments/assets/51471fcc-5d9c-40d6-8300-d7d3d24932d3" />
 
 ---
 
@@ -399,46 +399,4 @@ setplot dc1
 - **Observation peak current trend is not maintained at lower nodes that is due to velocity saturation**   
 
 ## Define delay -: CMOS Voltage-Transfer Characteristics (VTC) 
--- No video found 
-
-### DAY 2 Task 
--dd
-
-``` bash
-*Model Description
-.param temp=27
-*Including sky130 library files
-.lib "sky130_fd_pr/models/sky130.lib.spice" tt
-*Netlist Description
-XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
-R1 n1 in 55
-Vdd vdd 0 1.8V
-Vin in 0 1.8V
-*simulation commands
-.op
-.dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
-.control
-run
-display
-setplot dc1
-.endc
-.end
-```
-**Screen Shot:** Plotting  Id vs Vgs (1.8 v) Here W=0.39 micron and L= .15 micron Vds = 1.8 and sweeping Voltage vallues with step 0.1.
-
-<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/789684d6-18c0-4597-b15c-1fa7402b0204" /> 
-
-**Screen Shot:** Showing Linear behaviour Id vs Vgs (1.8 v) with 0.15 micron (short channel) behaviour.
-
-<img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/641807df-a06f-4519-bb32-b8676f0f3afe" />
-
-
-### Day2 Task 2
-- We need to plot the threshold voltage Plot for Id vs Vgs curve
-- We need a tangent or slope and extend to x-axis. So  
-
-**Screen Shot:** Finding the Slope that is Vth = ~ 0.75
-
-<img width="1687" height="883" alt="image" src="https://github.com/user-attachments/assets/be56d4ea-67f7-4ea7-8394-281de7ef6517" />
-
-
+-- In upcoming Sections.
