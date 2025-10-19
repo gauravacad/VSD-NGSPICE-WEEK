@@ -121,6 +121,10 @@ plot dc1.out vs in dc2.out vs in dc3.out vs in dc4.out vs in dc5.out vs in dc6.o
 
 <img width="705" height="592" alt="Image" src="https://github.com/user-attachments/assets/7746280f-56ad-4d7a-8b91-18523fac8a1c" />
 
+
+![Uploading image.png…]()
+
+
 ## 🔬 Next Steps: SPICE Simulation Studies
 
 To validate these concepts, SPICE simulations will be conducted to observe:
