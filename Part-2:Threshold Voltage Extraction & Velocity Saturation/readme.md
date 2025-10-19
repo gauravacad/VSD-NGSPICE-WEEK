@@ -28,6 +28,8 @@ setplot dc1
 
 <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/789684d6-18c0-4597-b15c-1fa7402b0204" /> 
 
+---
+
 **Screen Shot:** Showing Linear behaviour Id vs Vgs (1.8 v) with 0.15 micron (short channel) behaviour.
 
 <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/641807df-a06f-4519-bb32-b8676f0f3afe" />
