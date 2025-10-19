@@ -24,6 +24,7 @@ setplot dc1
 .endc
 .end
 ```
+
 **Screen Shot:** Plotting  Id vs Vgs (1.8 v) Here W=0.39 micron and L= .15 micron Vds = 1.8 and sweeping Voltage vallues with step 0.1.
 
 <img width="500" height="375" alt="image" src="https://github.com/user-attachments/assets/789684d6-18c0-4597-b15c-1fa7402b0204" /> 
